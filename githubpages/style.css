@@ -101,6 +101,27 @@ nav a:hover {
     text-decoration: none;
 }
 
+.lang-selector {
+    margin-left: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.lang-selector select {
+    background: var(--secondary-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    padding: 0.3rem 0.5rem;
+    border-radius: 6px;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.lang-selector select:hover {
+    border-color: var(--accent-color);
+}
+
 /* Hero Section */
 .hero {
     text-align: center;

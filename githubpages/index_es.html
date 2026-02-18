@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INVISIX.IO - AdBlock + VPN Listos para Usar</title>
+    <meta name="description"
+        content="Invisix: AdBlock para todo tu hogar y VPN Privada en una Raspberry Pi. Configuración fácil, sin complicaciones.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700&family=Fira+Code&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <nav>
+                <a href="#features">Características</a>
+                <a href="#materials">Materiales</a>
+                <a href="#install">Instalación</a>
+                <a href="https://github.com/lluisagusti/Invisix" target="_blank">GitHub</a>
+                <div class="lang-selector">
+                    <select onchange="location = this.value;">
+                        <option value="index.html">🇬🇧 English</option>
+                        <option value="index_es.html" selected>🇪🇸 Español</option>
+                        <option value="index_fr.html">🇫🇷 Français</option>
+                        <option value="index_zh.html">🇨🇳 中文</option>
+                    </select>
+                </div>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <h1>🛡️ INVISIX.IO</h1>
+            <p class="tagline">AdBlock + VPN Listos para Usar. Navega más rápido, seguro y sin distracciones. En todas
+                partes.
+            </p>
+            <img src="images/header.png" alt="Visualización de Invisix" class="hero-img">
+            <p style="margin-top:2rem;">
+                <a href="#install" class="button"
+                    style="background: var(--accent-color); color: #fff; padding: 10px 20px; border-radius: 6px; font-weight: bold; text-decoration: none;">Comenzar
+                    🚀</a>
+            </p>
+        </section>
+
+        <section id="features" class="features">
+            <div class="feature-card">
+                <span class="feature-icon">🚫</span>
+                <h3>Adiós Anuncios y Rastreadores</h3>
+                <p>Navega más rápido y sin distracciones. Bloquea anuncios y rastreadores en todos tus dispositivos.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🔒</span>
+                <h3>VPN Privada y Gratuita</h3>
+                <p>A nivel de IP, siempre estarás en casa. Funciona con todas las redes 4G/5G y roaming.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">✅</span>
+                <h3>Configuración Fácil y Rápida</h3>
+                <p>Listo en 10 minutos. Diseñado para usuarios no técnicos. Casi conectar y usar.</p>
+            </div>
+        </section>
+
+        <section id="materials">
+            <h2>📦 ¿Qué necesitas?</h2>
+            <div class="materials-list">
+                <ul>
+                    <li><strong>Raspberry Pi 4</strong> (o superior).</li>
+                    <li><strong>Tarjeta MicroSD</strong> (mínimo 8GB).</li>
+                    <li><strong>Cable Ethernet</strong>.</li>
+                    <li><strong>Fuente de alimentación USB-C</strong> para la Pi.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="install">
+            <h2>🚀 Guía de Instalación</h2>
+
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Descargar y Flashear 💾</h3>
+                <ol style="margin-left: 1.5rem;">
+                    <li>Descarga el archivo <strong>invisix-distro.img</strong>.</li>
+                    <li>Descarga e instala <a href="https://www.raspberrypi.com/software/" target="_blank">RaspberryPi
+                            Imager</a>.</li>
+                    <li>Abre el programa y selecciona:
+                        <ul>
+                            <li><strong>Dispositivo:</strong> Raspberry Pi 4</li>
+                            <li><strong>SO:</strong> "Use Custom" -> Selecciona <code>invisix-distro.img</code></li>
+                            <li><strong>Almacenamiento:</strong> Tu Tarjeta SD</li>
+                        </ul>
+                    </li>
+                    <li><strong>IMPORTANTE:</strong> Haz clic en NEXT y luego en "NO" para editar la configuración (ya
+                        la preconfiguramos).
+                    </li>
+                    <li>Haz clic en <strong>Write</strong> y espera.</li>
+                </ol>
+            </div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Configurar VPN (¡Magia!) ✨</h3>
+                <p><em>Opcional: omite si no quieres acceso VPN.</em></p>
+                <ol style="margin-left: 1.5rem; margin-top: 1rem;">
+                    <li>Ve a <a href="https://tailscale.com" target="_blank">Tailscale.com</a> y crea una cuenta
+                        gratuita.
+                    </li>
+                    <li>Ve a <strong>Settings > Keys</strong> y haz clic en <strong>"Generate auth key"</strong>.</li>
+                    <li>Copia la clave que empieza con <code>tskey-...</code>.</li>
+                    <li>En tu ordenador, abre la tarjeta SD flasheada (disco llamado <code>bootfs</code>).</li>
+                    <li>Crea un archivo de texto llamado <strong><code>tailscale-auth.key</code></strong>.</li>
+                    <li>Pega tu clave dentro, guarda y cierra.</li>
+                    <li>Expulsa la tarjeta SD.</li>
+                </ol>
+            </div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Conectar y Encender 🔌</h3>
+                <ol style="margin-left: 1.5rem;">
+                    <li>Inserta la tarjeta SD en la Raspberry Pi.</li>
+                    <li>Conecta el cable Ethernet (Router <-> Pi).</li>
+                    <li>Conecta la alimentación.</li>
+                    <li><strong>Espera 5 minutos ⏳</strong>. La Pi se autoconfigurará.</li>
+                </ol>
+            </div>
+
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Configurar Router ⚙️</h3>
+                <p>¡El único paso manual! Dile a tu router que use la Pi para DNS.</p>
+                <ol style="margin-left: 1.5rem; margin-top: 1rem;">
+                    <li>Inicia sesión en tu router (ej. <code>http://192.168.1.1</code>).</li>
+                    <li>Encuentra la configuración de <strong>DHCP</strong> o <strong>Red Local</strong>.</li>
+                    <li>Encuentra el dispositivo llamado <code>raspberrypi</code> y habilita <strong>"Static
+                            Lease"</strong> o
+                        <strong>"DHCP Reservation"</strong>.
+                    </li>
+                    <li>Copia su dirección IP (ej. <code>192.168.1.50</code>).</li>
+                    <li>En la configuración <strong>DNS</strong>, pon esa IP como <strong>DNS Primario</strong>.</li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="usage">
+            <h2>✅ ¡Listo para usar!</h2>
+            <div class="features" style="margin-top: 2rem;">
+                <div class="feature-card" style="text-align: left;">
+                    <h3>🏠 En Casa</h3>
+                    <p>No tienes que hacer nada. Los anuncios desaparecerán automáticamente de todos los dispositivos en
+                        tu WiFi.
+                    </p>
+                </div>
+                <div class="feature-card" style="text-align: left;">
+                    <h3>🌍 Fuera (4G/5G)</h3>
+                    <ol style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                        <li>Instala la app <strong>Tailscale</strong> en tu móvil.</li>
+                        <li>Inicia sesión.</li>
+                        <li>Activa el interruptor "Active".</li>
+                        <li>Disfruta de navegación segura y sin anuncios en cualquier lugar.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div
+                style="background: var(--card-bg); padding: 1.5rem; border-radius: 12px; margin-top: 2rem; border: 1px solid var(--border-color); text-align: center;">
+                <h3>🔧 Panel de Control</h3>
+                <p>Ver estadísticas de bloqueo en:</p>
+                <div class="command-block" style="display: inline-block; padding: 0.5rem 1rem;">
+                    http://&lt;TU-IP-PI&gt;/admin</div>
+                <p>Contraseña: <code>admin</code></p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Hecho con <span class="heart">❤️</span> en Barcelona-Costa Brava</p>
+            <p style="font-size: 0.8rem; margin-top: 1rem; opacity: 0.6;">Proyecto Open Source por Lluís Agustí</p>
+            <p style="font-size: 0.8rem; margin-top: 1rem; opacity: 0.6;">Imagen por Icon9: 2AP7ER4MZS, 3J78MSUBDL &
+                NCP3JFBQTZ.</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
