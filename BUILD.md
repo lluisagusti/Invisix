@@ -1,9 +1,9 @@
-# Pi-hole Ready-to-Go Distro Builder
+# Invisix Ready-to-Go Distro Builder
 
-This project contains the necessary tools to create a custom Raspberry Pi OS Lite image with Pi-hole pre-installed and auto-configurable.
+This project contains the necessary tools to create an Invisix image pre-installed and auto-configurable.
 
 ## Requirements
-- macOS with Docker Desktop installed and running.
+- macOS (or Windows with WSL/WSL 2) with Docker Desktop installed and running.
 - A [Raspberry Pi OS Lite (64-bit recommended)](https://www.raspberrypi.com/software/operating-systems/) image.
 
 ## Usage Instructions
@@ -32,7 +32,7 @@ This process will:
 - Generate a new file named **`invisix-distro.img`**.
 
 ### 3. Flashing
-Use [Raspberry Pi Imager](https://www.raspberrypi.com/software/) or `Etcher` to write the **`invisix-distro.img`** file to your SD card.
+Use `Raspberry Pi Imager` or `Etcher` to write the **`invisix-distro.img`** file to your SD card.
 
 ### 4. End User Installation
 1.  Insert the SD card into the Raspberry Pi 4 (or higher).
