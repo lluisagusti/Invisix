@@ -340,29 +340,70 @@ footer .heart {
     }
 
     header {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row;
+        /* Keep it in a row */
+        justify-content: space-between;
+        padding: 1rem 0;
+        /* Reduced padding */
+    }
+
+    .header-brand {
+        font-size: 1.5rem;
+        /* Match h3 size */
+        margin-right: auto;
+        /* Push nav to the right if needed, though justify-content handles it */
     }
 
     nav {
         display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        margin-top: 1.5rem;
-        width: 100%;
+        flex-direction: row;
+        /* Row for the few items left */
+        gap: 0.5rem;
+        /* Smaller gap */
+        margin-top: 0;
+        /* Reset margin */
+        width: auto;
+        /* Allow it to shrink */
+        align-items: center;
     }
 
-    nav a {
+    /* Hide Features, Materials, Install */
+    nav a[href="#features"],
+    nav a[href="#materials"],
+    nav a[href="#install"] {
+        display: none;
+    }
+
+    /* Target the GitHub link specifically */
+    nav a[href*="github"] {
+        font-size: 0;
+        /* Hide the text "GitHub" */
         margin: 0;
         padding: 0.5rem;
-        display: flex;
+        display: inline-flex;
         align-items: center;
-        justify-content: center;
+    }
+
+    /* Restore size for the SVG icon within the link */
+    nav a[href*="github"] .github-icon {
+        width: 1.5rem;
+        /* Slightly larger icon for touch */
+        height: 1.5rem;
+        margin-right: 0;
+        /* No margin needed since text is hidden */
+        font-size: 1rem;
+        /* Reset font size context if needed by SVG (usually not) */
     }
 
     .lang-selector {
-        margin-left: 0;
-        margin-top: 0.5rem;
+        margin-left: 0.5rem;
+        margin-top: 0;
+    }
+
+    .lang-selector select {
+        font-size: 0.8rem;
+        /* Smaller font */
+        padding: 0.2rem 0.4rem;
     }
 
     .step-number {
