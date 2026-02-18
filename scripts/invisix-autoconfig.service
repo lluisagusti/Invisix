@@ -1,0 +1,12 @@
+[Unit]
+Description=Pi-hole Auto Configuration on First Boot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/firstboot.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

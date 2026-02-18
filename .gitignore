@@ -1,0 +1,4 @@
+.DS_Store
+raspios.img
+.env
+.env.*
