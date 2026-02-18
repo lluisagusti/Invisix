@@ -2,3 +2,5 @@
 raspios.img
 .env
 .env.*
+docs/*
+docs
