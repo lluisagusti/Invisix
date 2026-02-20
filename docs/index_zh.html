@@ -1,242 +1,312 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invisix - Raspberry Pi 的 AdBlock 和 VPN | 即开即用</title>
-    <meta name="description" content="Invisix：在 Raspberry Pi 上获取全家 AdBlock 和私有 VPN 的最简单方法。即插即用，无需配置。支持 Tailscale。">
-    <meta name="keywords" content="Invisix, AdBlock, VPN, Raspberry Pi, Tailscale, 隐私, 安全, 家庭网络, Pi-hole 替代方案">
+    <title>Invisix - 你的家是你的堡垒。现在它也是你的VPN。</title>
+    <meta name="description" content="Invisix：买一台树莓派，刷入ISO，插上电源。让你的家庭摆脱广告、追踪器和不良行为者。最简单的非技术用户Linux发行版。">
+    <meta name="keywords" content="Invisix, 广告拦截, VPN, 树莓派, Tailscale, 隐私, 安全, 家庭网络, Pi-hole替代, Linux发行版">
 
-    <!-- Canonical URL -->
     <link rel="canonical" href="https://www.invisix.io/index_zh.html">
-
-    <!-- Social Media Tags (Open Graph) -->
-    <meta property="og:title" content="Invisix - Raspberry Pi 的 AdBlock 和 VPN | 即开即用">
-    <meta property="og:description" content="将您的 Raspberry Pi 变成强大的广告拦截器和私有 VPN。保护您的家庭并随处自由浏览。10 分钟轻松设置。">
+    <meta property="og:title" content="Invisix — 你的家是你的堡垒。现在它也是你的VPN。">
+    <meta property="og:description" content="买一台树莓派。刷入ISO。插上电源。让全家摆脱企业、追踪器和不良行为者的控制。">
     <meta property="og:image" content="https://www.invisix.io/images/header.png">
     <meta property="og:url" content="https://www.invisix.io/index_zh.html">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Invisix.io">
-
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Invisix - Raspberry Pi 的 AdBlock 和 VPN">
-    <meta name="twitter:description" content="全家 AdBlock 和私有 VPN，集成在一个 Raspberry Pi 中。设置简单。">
+    <meta name="twitter:title" content="Invisix — 你的家是你的堡垒。现在它也是你的VPN。">
+    <meta name="twitter:description" content="一个小盒子。所有设备零广告。免费私人VPN。最简单的Linux发行版。">
     <meta name="twitter:image" content="https://www.invisix.io/images/header.png">
 
-    <!-- International SEO (Hreflang) -->
     <link rel="alternate" hreflang="en" href="https://www.invisix.io/" />
     <link rel="alternate" hreflang="es" href="https://www.invisix.io/index_es.html" />
     <link rel="alternate" hreflang="fr" href="https://www.invisix.io/index_fr.html" />
     <link rel="alternate" hreflang="zh" href="https://www.invisix.io/index_zh.html" />
+    <link rel="alternate" hreflang="de" href="https://www.invisix.io/index_de.html" />
     <link rel="alternate" hreflang="x-default" href="https://www.invisix.io/" />
 
-    <!-- Fonts & Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700&family=Fira+Code&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
-    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml"
         href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23ffffff' d='M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z'/%3E%3Cg transform='translate(5, 5) scale(0.875)'%3E%3Cpath fill='%230d1117' d='M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z'/%3E%3C/g%3E%3C/svg%3E">
 
-    <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Invisix",
-      "applicationCategory": "SecurityApplication",
-      "operatingSystem": "Raspberry Pi OS",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      },
-      "description": "Invisix: 为您的整个家庭提供 AdBlock 和私人 VPN，集成在一个 Raspberry Pi 中。设置简单，无需复杂配置。",
-      "image": "https://www.invisix.io/images/header.png",
-      "url": "https://www.invisix.io/index_zh.html"
+      "@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Invisix",
+      "applicationCategory": "SecurityApplication", "operatingSystem": "Raspberry Pi OS",
+      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+      "description": "买一台树莓派，刷入ISO，插上电源。让你的家庭摆脱广告和追踪器。",
+      "image": "https://www.invisix.io/images/header.png", "url": "https://www.invisix.io/index_zh.html"
     }
     </script>
 </head>
 
 <body>
-
     <div class="container">
         <header>
             <h2 class="header-brand">🛡️ INVISIX.IO</h2>
             <nav>
                 <a href="#features">功能</a>
-                <a href="#materials">材料</a>
+                <a href="#problem">为什么</a>
                 <a href="#install">安装</a>
-                <a href="https://github.com/lluisagusti/Invisix" target="_blank">
-                    <svg class="github-icon" viewBox="0 0 16 16" version="1.1" aria-hidden="true">
+                <a href="https://github.com/lluisagusti/Invisix" target="_blank"><svg class="github-icon"
+                        viewBox="0 0 16 16" version="1.1" aria-hidden="true">
                         <path fill-rule="evenodd"
                             d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
                         </path>
-                    </svg>GitHub
-                </a>
-                <div class="lang-selector">
-                    <select onchange="location = this.value;">
+                    </svg>GitHub</a>
+                <div class="lang-selector"><select onchange="location = this.value;">
                         <option value="index.html">🇬🇧 English</option>
                         <option value="index_es.html">🇪🇸 Español</option>
                         <option value="index_fr.html">🇫🇷 Français</option>
                         <option value="index_zh.html" selected>🇨🇳 中文</option>
-                    </select>
-                </div>
+                        <option value="index_de.html">🇩🇪 Deutsch</option>
+                    </select></div>
             </nav>
         </header>
 
         <section class="hero">
             <h1>🛡️ INVISIX.IO</h1>
-            <p class="tagline">AdBlock + VPN 即用型。更快速、更安全、无干扰地浏览。无处不在。
-            </p>
-            <img src="images/header.png" alt="Invisix 演示" class="hero-img">
-            <p style="margin-top:2rem;">
-                <a href="#install" class="button"
+            <p class="tagline">你的家是你的堡垒。现在它也是你的VPN。</p>
+            <p style="color: #8b949e; font-size: 1rem; max-width: 600px; margin: 0 auto 0.5rem;">🚫
+                一个小盒子。所有设备零广告。手机、平板、智能电视——甚至那台可疑的IoT烤面包机。</p>
+            <p style="color: #8b949e; font-size: 1rem; max-width: 600px; margin: 0 auto 1.5rem;">🏆
+                可能是目前最简单、最实用的非技术用户Linux发行版。插上电源，然后忘掉它。</p>
+            <img src="images/header.png" alt="Invisix 可视化" class="hero-img">
+            <p style="margin-top:2rem;"><a href="#install" class="button"
                     style="background: var(--accent-color); color: #fff; padding: 10px 20px; border-radius: 6px; font-weight: bold; text-decoration: none;">开始使用
-                    🚀</a>
-            </p>
+                    🚀</a></p>
         </section>
 
         <section id="features" class="features">
-            <div class="feature-card">
-                <span class="feature-icon">🚫</span>
-                <h3>告别广告和追踪器</h3>
-                <p>浏览速度更快，无干扰。在所有设备上拦截广告和追踪器。</p>
+            <div class="feature-card"><span class="feature-icon">🚫</span>
+                <h3>全网广告拦截</h3>
+                <p>拦截你家中<strong>所有设备</strong>的广告和追踪器——手机、平板、智能电视，一切。</p>
             </div>
-            <div class="feature-card">
-                <span class="feature-icon">🔒</span>
-                <h3>免费且私密的 VPN</h3>
-                <p>在 IP 层面，您就像在家一样。适用于所有 4G/5G 和漫游网络。</p>
+            <div class="feature-card"><span class="feature-icon">🔒</span>
+                <h3>免费私人VPN</h3>
+                <p>无论你在哪，你的IP<strong>始终是家庭IP</strong>。</p>
             </div>
-            <div class="feature-card">
-                <span class="feature-icon">✅</span>
-                <h3>简单快速的设置</h3>
-                <p>10 分钟内启动运行。专为非技术用户设计。几乎即插即用。</p>
+            <div class="feature-card"><span class="feature-icon">👻</span>
+                <h3>对追踪器隐形</h3>
+                <p>DNS级别拦截意味着追踪器根本不会加载。</p>
+            </div>
+            <div class="feature-card"><span class="feature-icon">⚡</span>
+                <h3>10分钟安装</h3>
+                <p>刷写 → 插入 → 完成。无需终端。无需配置文件。</p>
+            </div>
+        </section>
+
+        <section id="problem">
+            <h2>🤔 问题</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">每次你打开手机，<strong>企业都在监视你</strong>。</p>
+            <div class="materials-list">
+                <ul>
+                    <li>你的网络运营商记录你访问的每一个网站。</li>
+                    <li>应用程序通过6000多个广告网络追踪你。</li>
+                    <li>智能电视、婴儿监视器、甚至你的冰箱——都在向某人发送你的数据。</li>
+                    <li>在公共WiFi或4G上，你的流量是完全暴露的。</li>
+                </ul>
+            </div>
+            <blockquote class="freedom-quote">
+                <p>"说你不在乎隐私是因为你没什么可隐瞒的，就等于说你不在乎言论自由是因为你没什么话可说。"</p>
+                <cite>— 爱德华·斯诺登</cite>
+            </blockquote>
+        </section>
+
+        <section>
+            <div class="freedom-callout">
+                <p>💥 <strong>买一台树莓派。刷入ISO。插上电源。</strong>就这样——你刚刚让全家摆脱了企业、追踪器和不良行为者的控制。不需要学位。不需要订阅。只有自由。</p>
+            </div>
+        </section>
+
+        <section id="compare">
+            <h2>🔥 为什么选择Invisix？</h2>
+            <div style="overflow-x: auto;">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>商业VPN</th>
+                            <th>仅Pi-hole</th>
+                            <th><strong>Invisix</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>月费</td>
+                            <td>¥50-100/月</td>
+                            <td>免费</td>
+                            <td><strong>免费</strong></td>
+                        </tr>
+                        <tr>
+                            <td>广告拦截</td>
+                            <td>❌</td>
+                            <td>✅ 仅在家</td>
+                            <td>✅ <strong>全场景</strong></td>
+                        </tr>
+                        <tr>
+                            <td>包含VPN</td>
+                            <td>✅</td>
+                            <td>❌</td>
+                            <td>✅ <strong>永久免费</strong></td>
+                        </tr>
+                        <tr>
+                            <td>所有设备上拦截</td>
+                            <td>❌</td>
+                            <td>✅</td>
+                            <td>✅</td>
+                        </tr>
+                        <tr>
+                            <td>数据归你所有</td>
+                            <td>🤷 看情况</td>
+                            <td>✅</td>
+                            <td>✅</td>
+                        </tr>
+                        <tr>
+                            <td>安装时间</td>
+                            <td>5分钟</td>
+                            <td>1-2小时</td>
+                            <td><strong>10分钟</strong></td>
+                        </tr>
+                        <tr>
+                            <td>需要终端</td>
+                            <td>不适用</td>
+                            <td>是</td>
+                            <td><strong>否</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
 
         <section id="materials">
-            <h2>📦 您需要什么？</h2>
+            <h2>📦 你需要什么</h2>
             <div class="materials-list">
                 <ul>
-                    <li><strong>Raspberry Pi 4</strong> (或更高版本)。</li>
-                    <li><strong>MicroSD 卡</strong> (至少 8GB)。</li>
-                    <li><strong>以太网线</strong>。</li>
-                    <li><strong>Pi 的 USB-C 电源</strong>。</li>
+                    <li><strong>树莓派 4</strong> (或更新型号) — ¥250-400</li>
+                    <li><strong>MicroSD卡</strong> (8GB以上) — ¥30</li>
+                    <li><strong>网线</strong> — ¥15</li>
+                    <li><strong>USB-C电源</strong> — ¥50</li>
                 </ul>
             </div>
+            <p style="margin-top: 1.5rem; text-align: center; font-size: 1.1rem;"><strong>总计：约¥350-500
+                    一次性费用。</strong>没有月费。永远没有。</p>
         </section>
 
         <section id="install">
-            <h2>🚀 安装指南</h2>
-
+            <h2>🚀 快速开始（10分钟）</h2>
             <div class="step">
                 <div class="step-number">1</div>
-                <h3>下载并烧录 💾</h3>
+                <h3>刷写镜像 💾</h3>
                 <ol style="margin-left: 1.5rem;">
-                    <li>下载 <strong>invisix-distro.img</strong> 文件。</li>
-                    <li>下载并安装 <a href="https://www.raspberrypi.com/software/" target="_blank">Raspberry Pi
-                            Imager</a>。
-                    </li>
-                    <li>打开程序并选择：
-                        <ul>
-                            <li><strong>设备：</strong> Raspberry Pi 4</li>
-                            <li><strong>操作系统：</strong> "Use Custom" -> 选择 <code>invisix-distro.img</code></li>
-                            <li><strong>存储：</strong> 您的 SD 卡</li>
+                    <li>从<a href="https://github.com/lluisagusti/Invisix/releases" target="_blank">发布页面</a>下载
+                        <strong>invisix-distro.img</strong>。</li>
+                    <li>下载 <a href="https://www.raspberrypi.com/software/" target="_blank">Raspberry Pi Imager</a>。</li>
+                    <li>选择：<ul>
+                            <li><strong>设备：</strong>Raspberry Pi 4</li>
+                            <li><strong>操作系统：</strong>"Use Custom" → <code>invisix-distro.img</code></li>
+                            <li><strong>存储：</strong>你的SD卡</li>
                         </ul>
                     </li>
-                    <li><strong>重要提示：</strong> 点击 NEXT，然后对编辑设置选"NO"（我们已预先配置好）。
-                    </li>
-                    <li>点击 <strong>Write</strong> 并等待。</li>
+                    <li><strong>重要：</strong>Next → "NO"（已配置好！）→ <strong>Write</strong>。</li>
                 </ol>
             </div>
-
             <div class="step">
                 <div class="step-number">2</div>
-                <h3>配置 VPN (魔法！) ✨</h3>
-                <p><em>可选：如果不需要 VPN 访问，请跳过。</em></p>
+                <h3>激活VPN（可选） ✨</h3>
+                <p><em>如果只想在家拦截广告，跳过此步。</em></p>
                 <ol style="margin-left: 1.5rem; margin-top: 1rem;">
-                    <li>前往 <a href="https://tailscale.com" target="_blank">Tailscale.com</a> 创建免费账户。
-                    </li>
-                    <li>前往 <strong>Settings > Keys</strong> 并点击 <strong>"Generate auth key"</strong>。</li>
-                    <li>复制以 <code>tskey-...</code> 开头的密钥。</li>
-                    <li>在电脑上打开烧录好的 SD 卡（名为 <code>bootfs</code> 的磁盘）。</li>
-                    <li>创建一个名为 <strong><code>tailscale-auth.key</code></strong> 的文本文件。</li>
-                    <li>将密钥粘贴进去，保存并关闭。</li>
-                    <li>弹出 SD 卡。</li>
+                    <li>在 <a href="https://tailscale.com" target="_blank">tailscale.com</a> 创建免费账户。</li>
+                    <li><strong>Settings → Keys → "Generate auth key"</strong>。</li>
+                    <li>复制密钥 (<code>tskey-...</code>)。</li>
+                    <li>打开SD卡 (<code>bootfs</code>)。</li>
+                    <li>创建 <strong><code>tailscale-auth.key</code></strong>，粘贴密钥，保存。</li>
+                    <li>弹出SD卡。</li>
                 </ol>
             </div>
-
             <div class="step">
                 <div class="step-number">3</div>
-                <h3>连接并通电 🔌</h3>
+                <h3>即插即用 🔌</h3>
                 <ol style="margin-left: 1.5rem;">
-                    <li>将 SD 卡插入 Raspberry Pi。</li>
-                    <li>连接以太网线（路由器 <-> Pi）。</li>
-                    <li>连接电源。</li>
-                    <li><strong>等待 5 分钟 ⏳</strong>。Pi 将自动配置。</li>
+                    <li>SD卡 → 树莓派。</li>
+                    <li>网线 → 路由器连接到树莓派。</li>
+                    <li>电源线 → 树莓派。</li>
+                    <li><strong>等待5分钟 ⏳</strong> — 自动完成所有配置。</li>
                 </ol>
             </div>
-
             <div class="step">
                 <div class="step-number">4</div>
                 <h3>配置路由器 ⚙️</h3>
-                <p>唯一的从手动步骤！告诉路由器使用 Pi作为 DNS。</p>
                 <ol style="margin-left: 1.5rem; margin-top: 1rem;">
-                    <li>登录路由器（例如 <code>http://192.168.1.1</code>）。</li>
-                    <li>找到 <strong>DHCP</strong> 或 <strong>局域网</strong> 设置。</li>
-                    <li>找到名为 <code>raspberrypi</code> 的设备并启用 <strong>"Static Lease"</strong> 或
-                        <strong>"DHCP Reservation"</strong>。
-                    </li>
-                    <li>复制其 IP 地址（例如 <code>192.168.1.50</code>）。</li>
-                    <li>在 <strong>DNS</strong> 设置中，将该 IP 设置为 <strong>首选 DNS</strong>。</li>
+                    <li>打开路由器管理页面 (<code>http://192.168.1.1</code>)。</li>
+                    <li>找到 <strong>DHCP</strong> / <strong>局域网</strong> 设置。</li>
+                    <li>找到 <code>raspberrypi</code> → 启用<strong>静态地址分配</strong>。</li>
+                    <li>复制其IP（例如：<code>192.168.1.50</code>）。</li>
+                    <li>将该IP设为<strong>首选DNS服务器</strong>。</li>
                 </ol>
             </div>
         </section>
 
         <section id="usage">
-            <h2>✅ 准备就绪！</h2>
+            <h2>✅ 完成！</h2>
             <div class="features" style="margin-top: 2rem;">
                 <div class="feature-card" style="text-align: left;">
                     <h3>🏠 在家</h3>
-                    <p>您无需做任何事情。WiFi 上所有设备的广告将自动消失。
-                    </p>
+                    <p>什么都不用做。广告消失了。页面加载更快了。生活美好了。</p>
                 </div>
                 <div class="feature-card" style="text-align: left;">
-                    <h3>🌍 在外 (4G/5G)</h3>
+                    <h3>📱 外出时 (4G / 公共WiFi)</h3>
                     <ol style="margin-left: 1.5rem; margin-top: 0.5rem;">
-                        <li>在手机上安装 <strong>Tailscale</strong> 应用。</li>
+                        <li>安装 <strong>Tailscale</strong> 应用。</li>
                         <li>登录。</li>
-                        <li>切换到 "Active"。</li>
-                        <li>随时随地享受安全、无广告的浏览。</li>
+                        <li>开启。</li>
+                        <li>无广告、加密、隐形。</li>
                     </ol>
                 </div>
             </div>
-
             <div
                 style="background: var(--card-bg); padding: 1.5rem; border-radius: 12px; margin-top: 2rem; border: 1px solid var(--border-color); text-align: center;">
-                <h3>🔧 控制面板</h3>
-                <p>查看拦截统计：</p>
+                <h3>📊 控制面板</h3>
                 <div class="command-block" style="display: inline-block; padding: 0.5rem 1rem;">
-                    http://&lt;YOUR-PI-IP&gt;/admin</div>
-                <p>密码： <code>admin</code></p>
+                    http://&lt;你的树莓派IP&gt;/admin</div>
+                <p>密码：<code>admin</code></p>
             </div>
         </section>
 
+        <section id="spread">
+            <h2>📣 帮我们传播</h2>
+            <div class="features" style="margin-top: 2rem;">
+                <div class="feature-card"><span class="feature-icon">⭐</span>
+                    <h3>给个Star</h3>
+                    <p>这是你能做的最重要的事。</p>
+                </div>
+                <div class="feature-card"><span class="feature-icon">📢</span>
+                    <h3>分享它</h3>
+                    <p>告诉朋友，发帖，转发。</p>
+                </div>
+                <div class="feature-card"><span class="feature-icon">🍴</span>
+                    <h3>Fork并贡献</h3>
+                    <p>代码、文档、翻译——都欢迎。</p>
+                </div>
+            </div>
+            <p style="text-align: center; font-size: 1.1rem; margin-top: 2rem; color: #8b949e;">
+                <em>互联网的设计初衷不是为了监视你。让我们一起夺回它。</em></p>
+        </section>
+
         <footer>
-            <p>Barcelona-Costa Brava 用 <span class="heart">❤️</span> 制作</p>
-            <p style="font-size: 0.8rem; margin-top: 1rem; opacity: 0.6;">Lluís Agustí 的开源项目</p>
-            <p style="font-size: 0.8rem; margin-top: 1rem; opacity: 0.6;">Icon9 的图片：2AP7ER4MZS, 3J78MSUBDL &
+            <p>用 <span class="heart">❤️</span> 在巴塞罗那制作</p>
+            <p style="font-size: 1rem; margin-top: 1rem; font-weight: 600;">隐私不是奢侈品。它是一项权利。</p>
+            <p style="font-size: 0.8rem; margin-top: 1rem; opacity: 0.6;">Image by Icon9: 2AP7ER4MZS, 3J78MSUBDL &
                 NCP3JFBQTZ.</p>
         </footer>
     </div>
-
 </body>
 
 </html>

@@ -3,52 +3,68 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.invisix.io/</loc>
-    <lastmod>2026-02-18</lastmod>
+    <lastmod>2026-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.invisix.io/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.invisix.io/index_es.html" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.invisix.io/index_fr.html" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://www.invisix.io/index_zh.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.invisix.io/index_de.html" />
   </url>
   <url>
     <loc>https://www.invisix.io/index.html</loc>
-    <lastmod>2026-02-18</lastmod>
+    <lastmod>2026-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.invisix.io/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.invisix.io/index_es.html" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.invisix.io/index_fr.html" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://www.invisix.io/index_zh.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.invisix.io/index_de.html" />
   </url>
   <url>
     <loc>https://www.invisix.io/index_es.html</loc>
-    <lastmod>2026-02-18</lastmod>
+    <lastmod>2026-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.invisix.io/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.invisix.io/index_es.html" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.invisix.io/index_fr.html" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://www.invisix.io/index_zh.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.invisix.io/index_de.html" />
   </url>
   <url>
     <loc>https://www.invisix.io/index_fr.html</loc>
-    <lastmod>2026-02-18</lastmod>
+    <lastmod>2026-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.invisix.io/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.invisix.io/index_es.html" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.invisix.io/index_fr.html" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://www.invisix.io/index_zh.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.invisix.io/index_de.html" />
   </url>
   <url>
     <loc>https://www.invisix.io/index_zh.html</loc>
-    <lastmod>2026-02-18</lastmod>
+    <lastmod>2026-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.invisix.io/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.invisix.io/index_es.html" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.invisix.io/index_fr.html" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://www.invisix.io/index_zh.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.invisix.io/index_de.html" />
+  </url>
+  <url>
+    <loc>https://www.invisix.io/index_de.html</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.invisix.io/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.invisix.io/index_es.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.invisix.io/index_fr.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.invisix.io/index_zh.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.invisix.io/index_de.html" />
   </url>
 </urlset>
