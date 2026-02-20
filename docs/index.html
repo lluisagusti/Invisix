@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invisix - Your Home is Your Castle. Now It's Your VPN Too.</title>
+    <meta name="description"
+        content="Invisix: Buy a Raspberry Pi, flash the ISO, plug it in. Free your household from ads, trackers, and bad actors. The simplest Linux distro for non-technical users.">
+    <meta name="keywords"
+        content="Invisix, AdBlock, VPN, Raspberry Pi, Tailscale, Privacy, Security, Home Network, Pi-hole alternative, Linux distro">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.invisix.io/">
+
+    <!-- Social Media Tags (Open Graph) -->
+    <meta property="og:title" content="Invisix — Your Home is Your Castle. Now It's Your VPN Too.">
+    <meta property="og:description"
+        content="Buy a Raspberry Pi. Flash the ISO. Plug it in. Free your entire household from corporations, trackers, and bad actors. No subscription. Just freedom.">
+    <meta property="og:image" content="https://www.invisix.io/images/header.png">
+    <meta property="og:url" content="https://www.invisix.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Invisix.io">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Invisix — Your Home is Your Castle. Now It's Your VPN Too.">
+    <meta name="twitter:description"
+        content="One tiny box. Zero ads on every device. Free private VPN. The simplest Linux distro for non-technical users.">
+    <meta name="twitter:image" content="https://www.invisix.io/images/header.png">
+
+    <!-- International SEO (Hreflang) -->
+    <link rel="alternate" hreflang="en" href="https://www.invisix.io/" />
+    <link rel="alternate" hreflang="es" href="https://www.invisix.io/index_es.html" />
+    <link rel="alternate" hreflang="fr" href="https://www.invisix.io/index_fr.html" />
+    <link rel="alternate" hreflang="zh" href="https://www.invisix.io/index_zh.html" />
+    <link rel="alternate" hreflang="de" href="https://www.invisix.io/index_de.html" />
+    <link rel="alternate" hreflang="x-default" href="https://www.invisix.io/" />
+
+    <!-- Fonts & Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700&family=Fira+Code&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23ffffff' d='M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z'/%3E%3Cg transform='translate(5, 5) scale(0.875)'%3E%3Cpath fill='%230d1117' d='M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z'/%3E%3C/g%3E%3C/svg%3E">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Invisix",
+      "applicationCategory": "SecurityApplication",
+      "operatingSystem": "Raspberry Pi OS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "Buy a Raspberry Pi, flash the ISO, plug it in. Free your household from ads, trackers, and bad actors. The simplest Linux distro for non-technical users.",
+      "image": "https://www.invisix.io/images/header.png",
+      "url": "https://www.invisix.io/"
+    }
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h2 class="header-brand">🛡️ INVISIX.IO</h2>
+            <nav>
+                <a href="#features">Features</a>
+                <a href="#problem">Why</a>
+                <a href="#install">Install</a>
+                <a href="https://github.com/lluisagusti/Invisix" target="_blank">
+                    <svg class="github-icon" viewBox="0 0 16 16" version="1.1" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+                        </path>
+                    </svg>GitHub
+                </a>
+                <div class="lang-selector">
+                    <select onchange="location = this.value;">
+                        <option value="index.html" selected>🇬🇧 English</option>
+                        <option value="index_es.html">🇪🇸 Español</option>
+                        <option value="index_fr.html">🇫🇷 Français</option>
+                        <option value="index_zh.html">🇨🇳 中文</option>
+                        <option value="index_de.html">🇩🇪 Deutsch</option>
+                    </select>
+                </div>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <h1>🛡️ INVISIX.IO</h1>
+            <p class="tagline">Your home is your castle. Now it's your VPN too.</p>
+            <p style="color: #8b949e; font-size: 1rem; max-width: 600px; margin: 0 auto 0.5rem;">
+                🚫 One tiny box. Zero ads on every device. Phones, tablets, smart TVs — even that sketchy IoT toaster.
+            </p>
+            <p style="color: #8b949e; font-size: 1rem; max-width: 600px; margin: 0 auto 1.5rem;">
+                🏆 Probably the simplest and most useful Linux distro for non-technical users. Plug it in and forget it.
+            </p>
+            <img src="images/header.png" alt="Invisix Visualization" class="hero-img">
+            <p style="margin-top:2rem;">
+                <a href="#install" class="button"
+                    style="background: var(--accent-color); color: #fff; padding: 10px 20px; border-radius: 6px; font-weight: bold; text-decoration: none;">Get
+                    Started 🚀</a>
+            </p>
+        </section>
+
+        <section id="features" class="features">
+            <div class="feature-card">
+                <span class="feature-icon">🚫</span>
+                <h3>Network-Wide Ad Blocker</h3>
+                <p>Blocks ads & trackers on <strong>every device</strong> in your home — phones, tablets, smart TVs,
+                    everything. Like the internet was meant to be.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🔒</span>
+                <h3>Free & Private VPN</h3>
+                <p>Wherever you go — 4G, airport WiFi, hotels — your IP is <strong>always your home IP</strong>. Like
+                    you never left the couch.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">👻</span>
+                <h3>Invisible to Trackers</h3>
+                <p>DNS-level blocking means trackers never even load. You simply don't exist to advertisers.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">⚡</span>
+                <h3>10 Minute Setup</h3>
+                <p>Flash → Plug → Done. No terminal. No config files. Designed for non-technical users.</p>
+            </div>
+        </section>
+
+        <!-- The Problem -->
+        <section id="problem">
+            <h2>🤔 The Problem</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">Every time you open your phone, <strong>corporations
+                    are watching</strong>.</p>
+            <div class="materials-list">
+                <ul>
+                    <li>Your ISP logs every website you visit.</li>
+                    <li>Apps track you across 6,000+ ad networks.</li>
+                    <li>Smart TVs, baby monitors, even your fridge — all phoning home.</li>
+                    <li>On public WiFi or 4G, your traffic is wide open.</li>
+                </ul>
+            </div>
+            <blockquote class="freedom-quote">
+                <p>"Arguing that you don't care about privacy because you have nothing to hide is like arguing that you
+                    don't care about free speech because you have nothing to say."</p>
+                <cite>— Edward Snowden</cite>
+            </blockquote>
+        </section>
+
+        <!-- Freedom Callout -->
+        <section>
+            <div class="freedom-callout">
+                <p>💥 <strong>Buy a Raspberry Pi. Flash the ISO. Plug it in.</strong> That's it — you just freed your
+                    entire household from corporations, trackers, and bad actors. No degree required. No subscription.
+                    Just freedom.</p>
+            </div>
+        </section>
+
+        <!-- Why Invisix Comparison -->
+        <section id="compare">
+            <h2>🔥 Why Invisix?</h2>
+            <div style="overflow-x: auto;">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Commercial VPN</th>
+                            <th>Pi-hole alone</th>
+                            <th><strong>Invisix</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monthly cost</td>
+                            <td>$5-15/mo</td>
+                            <td>Free</td>
+                            <td><strong>Free</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Ad blocking</td>
+                            <td>❌</td>
+                            <td>✅ Home only</td>
+                            <td>✅ <strong>Everywhere</strong></td>
+                        </tr>
+                        <tr>
+                            <td>VPN included</td>
+                            <td>✅</td>
+                            <td>❌</td>
+                            <td>✅ <strong>Free forever</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Blocks on all devices</td>
+                            <td>❌</td>
+                            <td>✅</td>
+                            <td>✅</td>
+                        </tr>
+                        <tr>
+                            <td>No app required (home)</td>
+                            <td>❌</td>
+                            <td>✅</td>
+                            <td>✅</td>
+                        </tr>
+                        <tr>
+                            <td>Your data stays yours</td>
+                            <td>🤷 Depends</td>
+                            <td>✅</td>
+                            <td>✅</td>
+                        </tr>
+                        <tr>
+                            <td>Setup time</td>
+                            <td>5 min</td>
+                            <td>1-2 hours</td>
+                            <td><strong>10 min</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Requires terminal</td>
+                            <td>N/A</td>
+                            <td>Yes</td>
+                            <td><strong>No</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="materials">
+            <h2>📦 What do you need?</h2>
+            <div class="materials-list">
+                <ul>
+                    <li><strong>Raspberry Pi 4</strong> (or higher) — ~$35-55</li>
+                    <li><strong>MicroSD Card</strong> (minimum 8GB) — ~$5</li>
+                    <li><strong>Ethernet Cable</strong> — ~$3</li>
+                    <li><strong>USB-C Power Supply</strong> for the Pi — ~$10</li>
+                </ul>
+            </div>
+            <p style="margin-top: 1.5rem; text-align: center; font-size: 1.1rem;"><strong>Total: ~$50-70
+                    one-time.</strong> No monthly fees. Ever.</p>
+        </section>
+
+        <section id="install">
+            <h2>🚀 Quickstart (10 minutes)</h2>
+
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Flash the Image 💾</h3>
+                <ol style="margin-left: 1.5rem;">
+                    <li>Download the <strong>invisix-distro.img</strong> from the <a
+                            href="https://github.com/lluisagusti/Invisix/releases" target="_blank">Releases page</a>.
+                    </li>
+                    <li>Download and install <a href="https://www.raspberrypi.com/software/" target="_blank">Raspberry
+                            Pi Imager</a>.</li>
+                    <li>Open the program and select:
+                        <ul>
+                            <li><strong>Device:</strong> Raspberry Pi 4</li>
+                            <li><strong>OS:</strong> "Use Custom" -> Select <code>invisix-distro.img</code></li>
+                            <li><strong>Storage:</strong> Your SD Card</li>
+                        </ul>
+                    </li>
+                    <li><strong>IMPORTANT:</strong> Click NEXT and then "NO" to edit settings (already configured!).
+                    </li>
+                    <li>Click <strong>Write</strong> and wait.</li>
+                </ol>
+            </div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Activate VPN (Optional) ✨</h3>
+                <p><em>Skip if you only want ad blocking at home.</em></p>
+                <ol style="margin-left: 1.5rem; margin-top: 1rem;">
+                    <li>Create a free account at <a href="https://tailscale.com" target="_blank">tailscale.com</a>
+                        (Google/Microsoft login works).</li>
+                    <li>Go to <strong>Settings > Keys</strong> and click <strong>"Generate auth key"</strong>.</li>
+                    <li>Copy the key (<code>tskey-...</code>).</li>
+                    <li>Open the flashed SD card on your computer (disk named <code>bootfs</code>).</li>
+                    <li>Create a file named <strong><code>tailscale-auth.key</code></strong> and paste the key inside.
+                        Save.</li>
+                    <li>Eject the SD card.</li>
+                </ol>
+            </div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Plug & Play 🔌</h3>
+                <ol style="margin-left: 1.5rem;">
+                    <li>SD card → Raspberry Pi.</li>
+                    <li>Ethernet cable → Router to Pi.</li>
+                    <li>Power cable → Pi.</li>
+                    <li><strong>Wait 5 minutes ⏳</strong> — it auto-configures everything.</li>
+                </ol>
+            </div>
+
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Tell Your Router (The only manual step) ⚙️</h3>
+                <ol style="margin-left: 1.5rem; margin-top: 1rem;">
+                    <li>Open your router's page (<code>http://192.168.1.1</code>).</li>
+                    <li>Find <strong>DHCP</strong> or <strong>Local Network</strong> settings.</li>
+                    <li>Find <code>raspberrypi</code> → enable <strong>"Static Lease"</strong>.</li>
+                    <li>Copy its IP (e.g., <code>192.168.1.50</code>).</li>
+                    <li>Set that IP as your <strong>Primary DNS</strong>.</li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="usage">
+            <h2>✅ Done! Ready to use.</h2>
+            <div class="features" style="margin-top: 2rem;">
+                <div class="feature-card" style="text-align: left;">
+                    <h3>🏠 At Home</h3>
+                    <p>Do nothing. Ads disappear. Pages load faster. Life improves.</p>
+                </div>
+                <div class="feature-card" style="text-align: left;">
+                    <h3>📱 Away (4G / Public WiFi)</h3>
+                    <ol style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                        <li>Install <strong>Tailscale</strong> app on your phone.</li>
+                        <li>Log in.</li>
+                        <li>Toggle ON.</li>
+                        <li>Ad-free, encrypted, invisible. Everywhere.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div
+                style="background: var(--card-bg); padding: 1.5rem; border-radius: 12px; margin-top: 2rem; border: 1px solid var(--border-color); text-align: center;">
+                <h3>� Control Panel</h3>
+                <p>See how many ads you've crushed:</p>
+                <div class="command-block" style="display: inline-block; padding: 0.5rem 1rem;">
+                    http://&lt;YOUR-PI-IP&gt;/admin</div>
+                <p>Password: <code>admin</code></p>
+                <p style="margin-top: 1rem; font-size: 0.9rem; color: #8b949e;">Most users block <strong>30-50% of all
+                        DNS queries</strong>. Thousands of trackers per day that never reach your devices.</p>
+            </div>
+        </section>
+
+        <!-- Spread the Word -->
+        <section id="spread">
+            <h2>📣 Help Us Spread the Word</h2>
+            <div class="features" style="margin-top: 2rem;">
+                <div class="feature-card">
+                    <span class="feature-icon">⭐</span>
+                    <h3>Star this repo</h3>
+                    <p>It's the single biggest thing you can do.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">📢</span>
+                    <h3>Share it</h3>
+                    <p>Tell a friend, post it, tweet it.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🍴</span>
+                    <h3>Fork & Contribute</h3>
+                    <p>Code, docs, translations — all welcome.</p>
+                </div>
+            </div>
+            <p style="text-align: center; font-size: 1.1rem; margin-top: 2rem; color: #8b949e;"><em>The internet wasn't
+                    designed to spy on you. Let's take it back.</em></p>
+        </section>
+
+        <footer>
+            <p>Made with <span class="heart">❤️</span> in Barcelona</p>
+            <p style="font-size: 1rem; margin-top: 1rem; font-weight: 600;">Privacy is not a luxury. It's a right.</p>
+            <p style="font-size: 0.8rem; margin-top: 1rem; opacity: 0.6;">Image by Icon9: 2AP7ER4MZS, 3J78MSUBDL &
+                NCP3JFBQTZ.</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
