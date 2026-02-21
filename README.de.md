@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="docs/images/logo_white.png" alt="Invisix Logo" width="200">
-</p>
-
 <h1 align="center">INVISIX</h1>
 
 <p align="center">
