@@ -5,22 +5,23 @@
 <h1 align="center">INVISIX</h1>
 
 <p align="center">
-  <strong>Dein Zuhause ist deine Burg. Jetzt ist es auch dein VPN.</strong><br>
-  <sub>🚫 Eine kleine Box. Null Werbung auf allen Geräten. Handys, Tablets, Smart-TVs — sogar der dubiose IoT-Toaster.</sub><br>
-  <sub>🏆 Wahrscheinlich die einfachste und nützlichste Linux-Distro für nicht-technische Nutzer. Einstecken und vergessen.</sub>
+  <strong>Unternehmensgerechte Datenschutzlösung, sofort einsatzbereit (Out-of-the-Box).</strong><br>
+  <sub>🚫 Eine winzige Box. Unbegrenzte Freiheit. Netzwerkweiter AdBlocker und TrackerBlocker.</sub><br>
+  <sub>💼 Sicheres, kostenloses VPN über Ihr Büro- oder Heimnetzwerk — entfernter Datenverkehr profitiert vom selben AdBlocker.</sub><br>
+  <sub>🏆 Entwickelt für Unternehmen, Freiberufler und kleine Firmen. Dank des reduzierten Preises auch für Heimanwender leicht einzusetzen.</sub>
 </p>
 
 <p align="center">
-  <a href="https://www.invisix.io">🌐 Website</a> · 
+  <a href="https://www.invisix.io/index_de.html">🌐 Website</a> · 
   <a href="#-schnellstart-10-minuten">🚀 Schnellstart</a> · 
-  <a href="https://github.com/lluisagusti/Invisix/stargazers">⭐ Stern geben</a>
+  <a href="https://github.com/lluisagusti/Invisix/stargazers">⭐ Sterne uns (Star Us)</a>
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/github/stars/lluisagusti/Invisix?style=social" alt="GitHub Stars">
-  <img src="https://img.shields.io/github/license/lluisagusti/Invisix" alt="Lizenz">
-  <img src="https://img.shields.io/badge/Installation-10%20Minuten-brightgreen" alt="Installationszeit">
-  <img src="https://img.shields.io/badge/Kosten-%240-blue" alt="Kosten: Kostenlos">
+  <img src="https://img.shields.io/github/license/lluisagusti/Invisix" alt="License">
+  <img src="https://img.shields.io/badge/setup-10%20minutes-brightgreen" alt="Setup Time">
+  <img src="https://img.shields.io/badge/reqs-Raspberry%20Pi%204B%202GB-blue" alt="Hardware">
 </p>
 
 <p align="center">
@@ -31,199 +32,196 @@
 
 ## 🤔 Das Problem
 
-Jedes Mal, wenn du dein Handy öffnest, **beobachten dich Konzerne**.
+Jeden Tag sind **Unternehmen, Remote-Mitarbeiter und Freiberufler ständiger Überwachung und Tracking ausgesetzt**.
 
-- Dein Internetanbieter protokolliert jede Webseite, die du besuchst.
-- Apps verfolgen dich über 6.000+ Werbenetzwerke.
-- Smart-TVs, Babyphones, sogar dein Kühlschrank — alles telefoniert nach Hause.
-- Im öffentlichen WLAN oder bei 4G ist dein Datenverkehr **völlig offen**.
+- Internetanbieter (ISPs) protokollieren jede Unternehmensdomain, die Sie besuchen.
+- Werbenetzwerke verfolgen das Nutzerverhalten über Tausende von Seiten hinweg.
+- Ohne ein zentralisiertes VPN sind externe Mitarbeiter in öffentlichen WLANs und über 4G ungeschützt.
+- Professionelle Firewall-, AdBlock- und VPN-Lösungen auf Enterprise-Niveau sind meist komplex, teuer und erfordern dedizierte IT-Teams.
 
-Du hast dich nicht für Überwachung entschieden. Aber du hast sie trotzdem bekommen.
+Sie benötigen eine professionelle, zuverlässige und sichere Umgebung.
 
-> *"Zu argumentieren, dass dir Privatsphäre egal ist, weil du nichts zu verbergen hast, ist wie zu argumentieren, dass dir Redefreiheit egal ist, weil du nichts zu sagen hast."*  
+> *"Zu argumentieren, dass einem Privatsphäre egal ist, weil man nichts zu verbergen hat, ist so, als ob man argumentiert, dass einem Meinungsfreiheit egal ist, weil man nichts zu sagen hat."*  
 > — **Edward Snowden**
 
 ---
 
 ## 💡 Die Lösung
 
-**Invisix** ist eine Plug-and-Play Raspberry Pi Distribution, die dir bietet:
+**Invisix** ist eine Plug-and-Play Linux-Distribution für Ihren Raspberry Pi, die eine **unternehmensweite Datenschutzlösung bietet – sofort einsatzbereit.**
 
-| Funktion | Was sie macht | Wie es sich anfühlt |
+| Funktion | Was sie bewirkt | Auswirkung |
 |---|---|---|
-| 🚫 **Netzwerkweiter Werbeblocker** | Blockiert Werbung & Tracker auf **allen Geräten** in deinem Zuhause — Handys, Tablets, Smart-TVs, alles | So wie Internet sein sollte |
-| 🔒 **Kostenloses privates VPN** | Egal wo du bist (4G, Flughafen-WLAN, Hotels), deine IP ist **immer deine Heim-IP** | Als hättest du nie die Couch verlassen |
-| 👻 **Unsichtbar für Tracker** | DNS-Level-Blockierung bedeutet, dass Tracker nicht einmal geladen werden | Als würdest du für Werbetreibende nicht existieren |
-| ⚡ **10 Minuten Installation** | Flashen → Einstecken → Fertig. Kein Terminal. Keine Config-Dateien. | So wie es sein sollte |
+| 🚫 **AdBlocker & TrackerBlocker** | Blockiert Werbung & Tracker auf **jedem Gerät**, das mit Ihrem Netzwerk verbunden ist. | Bandbreitenoptimierung und Schutz vor bösartigem Tracking. |
+| 🔒 **Kostenloses VPN durch Büro/Zuhause** | Leitet externen Datenverkehr (4G, Hotel-WLAN) sicher durch Ihr lokales Netzwerk. | Arbeiten Sie von überall sicher mit einer lokalen IP. |
+| 🛡️ **VPN profitiert vom AdBlocker** | Sogar bei Remote-Arbeit über VPN wird Ihr Datenverkehr vom AdBlocker gefiltert. | Konstante Sicherheit unabhängig von Ihrem Standort. |
+| 📉 **Geringer Preis** | Erfordert nur einen Raspberry Pi 4B 2GB (Mindestanforderung). | Zugänglich für kleine Unternehmen, Freiberufler und Heimanwender. |
 
-**Kein Abo. Keine Cloud. Keine Datensammlung. Kein Quatsch.**
+**Keine Abonnements. Keine Datensammlung in der Cloud. Nur eine einfache Konfigurationsänderung, um Ihr Geschäft zu sichern.**
 
-Dein Raspberry Pi. Deine Regeln.
-
-> **💥 Kauf dir einen Raspberry Pi. Flash das ISO. Steck ihn ein. Das war's — du hast gerade deinen gesamten Haushalt von Konzernen, Trackern und böswilligen Akteuren befreit. Kein Studium nötig. Kein Abo. Einfach Freiheit.**
+> **💥 Kaufen Sie einen Raspberry Pi 4B 2GB. Flashen Sie die ISO. Stecken Sie ihn ein. Schützen Sie Ihr Büro- oder Heimnetzwerk sofort.**
 
 ---
 
-## 🏗️ Wie Es Funktioniert
+## 🏗️ Wie es funktioniert
 
-```
-                      DEIN ZUHAUSE
+```text
+                        IHR BÜRO / ZUHAUSE
   ┌──────────────────────────────────────────────────────┐
   │                                                      │
-  │   Handy ────┐                                        │
-  │   Laptop ───┤                                        │
-  │   Smart TV ─┼───▶  Raspberry Pi (Invisix)  ───▶ Internet
-  │   Konsole ──┤        |-- Pi-hole (Werbeblocker)      │
-  │   Tablet ───┘        '-- Tailscale (VPN)             │
+  │   Arbeitsplatz ──────┐                               │
+  │   Laptop ────────────┤                               │
+  │   Smart-Bildschirm ──┼─▶ Raspberry Pi (Invisix) ─▶ Internet
+  │   Smartphone ────────┤      |-- DNS AdBlocker        │
+  │   IoT-Gerät ─────────┘      '-- Tailscale (VPN)      │
   │                                                      │
-  │   Alle DNS-Anfragen gefiltert. Werbung vernichtet.   │
+  │   Alle DNS-Anfragen gefiltert. Tracker eliminiert.   │
   └──────────────────────────────────────────────────────┘
 
-                       UNTERWEGS
+                      REMOTE-MITARBEITER
   ┌──────────────────────────────────────────────────────┐
   │                                                      │
-  │   Du (4G / Flughafen-WLAN / Hotel)                   │
+  │   Remote-Laptop (4G / Hotel / Flughafen)             │
   │     |                                                │
-  │     '───▶  Tailscale VPN-Tunnel  ───▶  Zuhause       │
+  │     '───▶  Tailscale VPN-Tunnel ───▶  Lokales Netz   │
   │                                                      │
-  │   Deine IP = Heim-IP. Werbung = Immer blockiert.     │
-  │   ISP/Hotel/Flughafen sieht: verschluesselten Traffic│
+  │   Datenverkehr nahtlos durch AdBlocker geschützt.    │
+  │   Externe Netzwerke sehen nur verschlüsseltes Rauschen. │
   └──────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 📦 Was Du Brauchst
+## 📦 Was Sie brauchen
 
-| Material | Kosten | Anmerkung |
+| Artikel | Kosten | Hinweis |
 |---|---|---|
-| 🍓 Raspberry Pi 4 (oder neuer) | ~35-55€ | Das Gehirn |
-| 💾 MicroSD-Karte (8GB+) | ~5€ | Die Seele |
-| 🔌 Ethernet-Kabel | ~3€ | Das Rückgrat |
-| ⚡ USB-C Netzteil | ~10€ | Das Herz |
+| 🍓 Raspberry Pi 4B 2GB (Min. Req) | ~$35-55 | Das Gehirn |
+| 💾 MicroSD-Karte (8GB+) | ~$5 | Der Speicher |
+| 🔌 Ethernet-Kabel | ~$3 | Die Verbindung |
+| ⚡ USB-C Netzteil | ~$10 | Die Stromversorgung |
 
-**Gesamt: ~50-70€ einmalig.** Keine monatlichen Kosten. Niemals.
-
-> Vergleiche das mit 10-15€/Monat für ein kommerzielles VPN, das [dich trotzdem verfolgt](https://www.consumerreports.org/electronics/vpn-services/vpn-testing-poor-privacy-security-a5765950498/) und deine Daten verkauft. Invisix hat sich in **4 Monaten** bezahlt gemacht.
+**Gesamt: ~$50-70 einmalig.** Keine wiederkehrenden SaaS-Gebühren für Unternehmensschutz.
 
 ---
 
 ## 🚀 Schnellstart (10 Minuten)
 
-### Schritt 1: Image Flashen 💾
+### Schritt 1: Image flashen 💾
 
-1. Lade **`invisix-distro.img`** von der [Releases-Seite](https://github.com/lluisagusti/Invisix/releases) herunter.
-2. Lade [**Raspberry Pi Imager**](https://www.raspberrypi.com/software/) herunter.
-3. Öffne ihn und wähle:
-   - **Gerät**: Raspberry Pi 4
-   - **OS**: Ganz nach unten scrollen → "Use Custom" → `invisix-distro.img` auswählen
-   - **Speicher**: Deine SD-Karte
-4. Klicke **Next** → **"NEIN"** zu Einstellungen bearbeiten (bereits konfiguriert!) → **Write**.
+1. Laden Sie die **`invisix-distro.img`** von der [Releases-Seite](https://github.com/lluisagusti/Invisix/releases) herunter.
+2. Laden Sie [**Raspberry Pi Imager**](https://www.raspberrypi.com/software/) herunter.
+3. Öffnen Sie es und wählen Sie:
+   - **Gerät (Device)**: Raspberry Pi 4
+   - **OS**: Nach unten scrollen → "Use Custom" → `invisix-distro.img` auswählen
+   - **Speicher (Storage)**: Ihre SD-Karte
+4. Klicken Sie auf **Weiter** → **"NEIN"** zu den Einstellungen (bereits konfiguriert!) → **Schreiben**.
 
-### Schritt 2: VPN Aktivieren (Optional) ✨
+### Schritt 2: Kostenloses VPN aktivieren (Optional) ✨
 
-> *Überspringe dies, wenn du nur Werbeblocker zu Hause willst.*
+> *Überspringen Sie dies, wenn Sie nur den lokalen Netzwerkschutz wünschen.*
 
-1. Erstelle ein kostenloses Konto bei [**tailscale.com**](https://tailscale.com) (Google/Microsoft-Login funktioniert).
-2. Gehe zu **Settings → Keys → "Generate auth key"**.
-3. Kopiere den Schlüssel (`tskey-...`).
-4. Öffne die geflashte SD-Karte am Computer (erscheint als `bootfs`).
-5. Erstelle eine Datei namens **`tailscale-auth.key`** und füge den Schlüssel ein. Speichern.
+1. Erstellen Sie ein kostenloses Konto bei [**tailscale.com**](https://tailscale.com).
+2. Gehen Sie zu **Settings → Keys → "Generate auth key"**.
+3. Kopieren Sie den Schlüssel (`tskey-...`).
+4. Öffnen Sie die geflashte SD-Karte an Ihrem Computer (als Laufwerk `bootfs`).
+5. Erstellen Sie eine Datei namens **`tailscale-auth.key`** und fügen Sie den Schlüssel darin ein. Speichern.
 6. Auswerfen.
 
-### Schritt 3: Einstecken & Los 🔌
+### Schritt 3: Plug & Play 🔌
 
 1. SD-Karte → Raspberry Pi.
-2. Ethernet-Kabel → Router zum Pi.
+2. Ethernet-Kabel → Router/Switch zum Pi.  
 3. Stromkabel → Pi.
-4. **5 Minuten warten** ⏳ — alles konfiguriert sich automatisch.
+4. **5 Minuten warten** ⏳ — er konfiguriert alles automatisch.
 
-### Schritt 4: Router Konfigurieren (Der einzige manuelle Schritt) ⚙️
+### Schritt 4: Die einzige Konfigurationsänderung ⚙️
 
-1. Öffne die Router-Seite (`http://192.168.1.1` oder `http://192.168.0.1`).
-2. Finde die **DHCP** / **Lokales Netzwerk** Einstellungen.
-3. Finde `raspberrypi` in der Geräteliste → aktiviere **Statische Zuweisung**.
-4. Kopiere die IP (z.B. `192.168.1.50`).
-5. Setze diese IP als deinen **Primären DNS**.
+Um alle Anfragen über Invisix zu leiten, müssen Sie Ihrem Router sagen, wo er suchen soll:
+
+1. Öffnen Sie die Verwaltungsseite Ihres Routers (`http://192.168.1.1` oder `http://192.168.0.1`).
+2. Suchen Sie nach den **DHCP**- oder **Lokales Netzwerk**-Einstellungen.
+3. Suchen Sie nach `raspberrypi` → aktivieren Sie **"Static Lease" (Feste IP)** (damit sich die IP nie ändert).
+4. Kopieren Sie diese IP (z.B. `192.168.1.50`).
+5. Legen Sie diese IP als den **primären DNS-Server** Ihres Netzwerks fest.
 
 ### ✅ Fertig!
 
-**Das war's.** Alle Geräte in deinem Netzwerk sind jetzt werbefrei und trackerfrei.
+**Das war's.** Ihr Unternehmens- oder Heimnetzwerk ist nun vor Werbung und Tracking geschützt.
 
 ---
 
 ## 🌍 Nutzung
 
-### 🏠 Zu Hause
-Mach nichts. Werbung verschwindet. Seiten laden schneller. Das Leben wird besser.
+### 🏢 Im Büro / Zuhause
+Tun Sie gar nichts. Werbung verschwindet. Seiten laden schneller. Verfolgung stoppt. Das ganze Team ist geschützt.
 
-### 📱 Unterwegs (4G / Öffentliches WLAN)
-1. Installiere die **Tailscale** App auf deinem Handy.
-2. Anmelden.
-3. Einschalten.
-4. Du surfst jetzt über deine Heimverbindung — **werbefrei, verschlüsselt, unsichtbar**.
+### 💼 Remote-Arbeit (4G / Öffentliches WLAN)
+1. Installieren Sie den **Tailscale** Client auf Ihrem Arbeitsgerät.
+2. Einloggen.
+3. VPN auf ON schalten.
+4. Fertig – **Ihr VPN-Verkehr profitiert vom selben AdBlocker-Schutz.**
 
 ### 📊 Kontrollzentrum
-Sieh dir an, wie viele Werbungen du zerquetscht hast:
-- Besuche `http://<DEINE-PI-IP>/admin`
+Überprüfen Sie Ihren Netzwerkverkehr und sehen Sie, was blockiert wird:
+- Besuchen Sie `http://<IHRE-PI-IP>/admin`
 - Passwort: `admin`
 
-> Die meisten Nutzer blockieren **30-50% aller DNS-Anfragen**. Das sind tausende Tracker pro Tag, die deine Geräte nie erreichen.
+> Die meisten Netzwerke blockieren **30-50% aller DNS-Anfragen**. Das sind Tausende Tracking-Versuche pro Tag.
 
 ---
 
 ## 🔥 Warum Invisix?
 
-| | Kommerzielles VPN | Pi-hole allein | **Invisix** |
+| | Unternehmens-Firewall | SaaS VPN | **Invisix** |
 |---|---|---|---|
-| Monatliche Kosten | 5-15€/Monat | Kostenlos | **Kostenlos** |
-| Werbeblocker | ❌ | ✅ Nur zu Hause | ✅ **Überall** |
-| VPN inklusive | ✅ | ❌ | ✅ **Für immer kostenlos** |
-| Blockiert auf allen Geräten | ❌ | ✅ | ✅ |
-| Keine App nötig (zu Hause) | ❌ | ✅ | ✅ |
-| Deine Daten bleiben deine | 🤷 Kommt drauf an | ✅ | ✅ |
-| Installationszeit | 5 Min | 1-2 Stunden | **10 Min** |
-| Terminal erforderlich | N/A | Ja | **Nein** |
+| Monatliche Kosten | $$$/Monat | $15/Monat pro Nutzer | **Kostenlos** |
+| Ad- & Tracker-Blocker | ✅ Erfordert IT | ❌ | ✅ **Out-of-the-Box** |
+| Sicheres Remote VPN | ✅ Komplexes Setup | ✅ | ✅ **Einfach & Kostenlos** |
+| VPN mit AdBlock | ✅ | ❌ | ✅ **Ja** |
+| Zielgruppe | Großkonzerne | Jeder | **KMU, Freelance, Heimnutzer** |
+| Einrichtungszeit | Tage | 5 Min | **10 Min** |
+| Erfordert IT-Kenntnisse | Ja | Nein | **Nein (nur 1 Änderung)** |
 
 ---
 
 ## 🤝 Mitwirken
 
-Bug gefunden? Eine Idee? Wir freuen uns über deine Hilfe.
+Haben Sie einen Fehler gefunden? Eine Idee? Helfen Sie uns.
 
-1. Forke dieses Repo.
-2. Erstelle deinen Branch: `git checkout -b feature/tolle-funktion`
-3. Commit: `git commit -m 'Tolle Funktion hinzufügen'`
-4. Push: `git push origin feature/tolle-funktion`
-5. Öffne einen Pull Request.
+1. Forken Sie dieses Repo.
+2. Erstellen Sie Ihren Feature-Branch: `git checkout -b feature/tolles-feature`
+3. Committen: `git commit -m 'Tolles Feature hinzugefügt'`
+4. Pushen: `git push origin feature/tolles-feature`
+5. Pull Request öffnen.
 
-Siehe [`BUILD.md`](BUILD.md) für Anweisungen zum Bauen des Distro-Images aus dem Quellcode.
+Siehe [`BUILD.md`](BUILD.md) für Anweisungen zur Erstellung des Distro-Images aus dem Quellcode.
 
 ---
 
-## 📣 Hilf Uns, das Wort zu Verbreiten
+## 📣 Helfen Sie uns bei der Verbreitung
 
-Wenn Invisix dir geholfen hat, **hilf ihm, anderen zu helfen**:
+Wenn Invisix Ihren Arbeitsablauf gesichert hat, **helfen Sie anderen**:
 
-- ⭐ **Gib diesem Repo einen Stern** — das ist das Wichtigste, was du tun kannst.
-- 📢 **Teile es** — erzähl einem Freund, poste es, tweete es.
-- 🐛 **Melde Bugs** — jedes Issue macht Invisix besser für alle.
-- 🍴 **Fork & trage bei** — Code, Docs, Übersetzungen, alles willkommen.
+- ⭐ **Repo bewerten** — das ist die beste Möglichkeit, uns zu unterstützen.
+- 📢 **Teilen** — sagen Sie es einem IT-Admin oder Freelance-Kollegen.
+- 🐛 **Bugs melden** — jeder gemeldete Fehler macht Invisix besser.
+- 🍴 **Fork & Contribute** — Code, Dokumentation, Übersetzungen, alles willkommen.
 
-> Das Internet wurde nicht dafür entworfen, dich auszuspionieren. Holen wir es uns zurück.
+> Das Internet wurde nicht dafür entworfen, Sie auszuspionieren. Holen wir es uns zurück.
 
 ---
 
 ## 📜 Lizenz
 
-[MIT-Lizenz](LICENSE) — mach damit, was du willst. Wirklich.
+[MIT License](LICENSE) — Teilen macht Freude (Sharing is caring).
 
 ---
 
 <p align="center">
-  Mit ❤️ in Barcelona gemacht
+  Hergestellt mit ❤️ in Barcelona
 </p>
 
 <p align="center">
-  <strong>Privatsphäre ist kein Luxus. Es ist ein Recht.</strong>
+  <strong>Datenschutz ist kein Luxus. Er ist ein Recht.</strong>
 </p>

@@ -4,22 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invisix - 你的家是你的堡垒。现在它也是你的VPN。</title>
-    <meta name="description" content="Invisix：买一台树莓派，刷入ISO，插上电源。让你的家庭摆脱广告、追踪器和不良行为者。最简单的非技术用户Linux发行版。">
-    <meta name="keywords" content="Invisix, 广告拦截, VPN, 树莓派, Tailscale, 隐私, 安全, 家庭网络, Pi-hole替代, Linux发行版">
+    <title>Invisix - 开箱即用的企业级隐私保护解决方案。</title>
+    <meta name="description" content="Invisix: 购买一台树莓派4B 2GB，烧录ISO镜像，插上电源。立即保护您的办公室或家庭网络。内建免费VPN服务。">
+    <meta name="keywords"
+        content="Invisix, 广告拦截, TrackerBlocker, 跟踪拦截, VPN, 树莓派, Raspberry Pi, Tailscale, 隐私安全保护, 企业级安全, 自由职业者">
 
+    <!-- Canonical URL -->
     <link rel="canonical" href="https://www.invisix.io/index_zh.html">
-    <meta property="og:title" content="Invisix — 你的家是你的堡垒。现在它也是你的VPN。">
-    <meta property="og:description" content="买一台树莓派。刷入ISO。插上电源。让全家摆脱企业、追踪器和不良行为者的控制。">
+
+    <!-- Social Media Tags (Open Graph) -->
+    <meta property="og:title" content="Invisix — 开箱即用的企业级隐私保护解决方案。">
+    <meta property="og:description" content="购买一台树莓派4B 2GB。烧录ISO镜像。插上电源。立即保护网络。没有订阅费，只有真正的自由。">
     <meta property="og:image" content="https://www.invisix.io/images/header.png">
     <meta property="og:url" content="https://www.invisix.io/index_zh.html">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Invisix.io">
+
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Invisix — 你的家是你的堡垒。现在它也是你的VPN。">
-    <meta name="twitter:description" content="一个小盒子。所有设备零广告。免费私人VPN。最简单的Linux发行版。">
+    <meta name="twitter:title" content="Invisix — 开箱即用的企业级隐私保护解决方案。">
+    <meta name="twitter:description" content="一个小盒子。无限自由。全网络的广告拦截器和跟踪器拦截。通过办公室提供免费的安全VPN。">
     <meta name="twitter:image" content="https://www.invisix.io/images/header.png">
 
+    <!-- International SEO (Hreflang) -->
     <link rel="alternate" hreflang="en" href="https://www.invisix.io/" />
     <link rel="alternate" hreflang="es" href="https://www.invisix.io/index_es.html" />
     <link rel="alternate" hreflang="fr" href="https://www.invisix.io/index_fr.html" />
@@ -27,159 +34,187 @@
     <link rel="alternate" hreflang="de" href="https://www.invisix.io/index_de.html" />
     <link rel="alternate" hreflang="x-default" href="https://www.invisix.io/" />
 
+    <!-- Fonts & Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700&family=Fira+Code&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml"
         href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23ffffff' d='M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z'/%3E%3Cg transform='translate(5, 5) scale(0.875)'%3E%3Cpath fill='%230d1117' d='M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z'/%3E%3C/g%3E%3C/svg%3E">
 
+    <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Invisix",
-      "applicationCategory": "SecurityApplication", "operatingSystem": "Raspberry Pi OS",
-      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
-      "description": "买一台树莓派，刷入ISO，插上电源。让你的家庭摆脱广告和追踪器。",
-      "image": "https://www.invisix.io/images/header.png", "url": "https://www.invisix.io/index_zh.html"
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Invisix",
+      "applicationCategory": "SecurityApplication",
+      "operatingSystem": "Raspberry Pi OS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "购买一台树莓派4B 2GB，烧录ISO镜像，插上电源。立即保护您的办公室或家庭网络。内建免费VPN服务。",
+      "image": "https://www.invisix.io/images/header.png",
+      "url": "https://www.invisix.io/index_zh.html"
     }
     </script>
 </head>
 
 <body>
+
     <div class="container">
         <header>
             <h2 class="header-brand">🛡️ INVISIX.IO</h2>
             <nav>
-                <a href="#features">功能</a>
-                <a href="#problem">为什么</a>
-                <a href="#install">安装</a>
-                <a href="https://github.com/lluisagusti/Invisix" target="_blank"><svg class="github-icon"
-                        viewBox="0 0 16 16" version="1.1" aria-hidden="true">
+                <a href="#features">功能特征</a>
+                <a href="#problem">痛点剖析</a>
+                <a href="#install">如何安装</a>
+                <a href="https://github.com/lluisagusti/Invisix" target="_blank">
+                    <svg class="github-icon" viewBox="0 0 16 16" version="1.1" aria-hidden="true">
                         <path fill-rule="evenodd"
                             d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
                         </path>
-                    </svg>GitHub</a>
-                <div class="lang-selector"><select onchange="location = this.value;">
+                    </svg>GitHub
+                </a>
+                <div class="lang-selector">
+                    <select onchange="location = this.value;">
                         <option value="index.html">🇬🇧 English</option>
                         <option value="index_es.html">🇪🇸 Español</option>
                         <option value="index_fr.html">🇫🇷 Français</option>
                         <option value="index_zh.html" selected>🇨🇳 中文</option>
                         <option value="index_de.html">🇩🇪 Deutsch</option>
-                    </select></div>
+                    </select>
+                </div>
             </nav>
         </header>
 
         <section class="hero">
             <h1>🛡️ INVISIX.IO</h1>
-            <p class="tagline">你的家是你的堡垒。现在它也是你的VPN。</p>
-            <p style="color: #8b949e; font-size: 1rem; max-width: 600px; margin: 0 auto 0.5rem;">🚫
-                一个小盒子。所有设备零广告。手机、平板、智能电视——甚至那台可疑的IoT烤面包机。</p>
-            <p style="color: #8b949e; font-size: 1rem; max-width: 600px; margin: 0 auto 1.5rem;">🏆
-                可能是目前最简单、最实用的非技术用户Linux发行版。插上电源，然后忘掉它。</p>
-            <img src="images/header.png" alt="Invisix 可视化" class="hero-img">
-            <p style="margin-top:2rem;"><a href="#install" class="button"
-                    style="background: var(--accent-color); color: #fff; padding: 10px 20px; border-radius: 6px; font-weight: bold; text-decoration: none;">开始使用
-                    🚀</a></p>
+            <p class="tagline">开箱即用的企业级隐私保护解决方案。</p>
+            <p style="color: #8b949e; font-size: 1rem; max-width: 600px; margin: 0 auto 0.5rem;">
+                🚫 一个小盒子。无限自由。全网络的广告拦截器和跟踪器拦截。通过您的办公室或家庭网络实现安全免费的VPN。
+            </p>
+            <p style="color: #8b949e; font-size: 1rem; max-width: 600px; margin: 0 auto 1.5rem;">
+                🏆 专为企业、自由职业者和小型公司设计。因其极低成本，也十分适合家庭用户使用。
+            </p>
+            <img src="images/header.png" alt="Invisix Visualization" class="hero-img">
+            <p style="margin-top:2rem;">
+                <a href="#install" class="button"
+                    style="background: var(--accent-color); color: #fff; padding: 10px 20px; border-radius: 6px; font-weight: bold; text-decoration: none;">快速开始
+                    🚀</a>
+            </p>
         </section>
 
         <section id="features" class="features">
-            <div class="feature-card"><span class="feature-icon">🚫</span>
-                <h3>全网广告拦截</h3>
-                <p>拦截你家中<strong>所有设备</strong>的广告和追踪器——手机、平板、智能电视，一切。</p>
+            <div class="feature-card">
+                <span class="feature-icon">🚫</span>
+                <h3>广告拦截与跟踪拦截</h3>
+                <p>在您网络连接的<strong>每个设备</strong>上拦截广告和数据跟踪器。优化网络带宽，防止恶意的数据搜集活动。</p>
             </div>
-            <div class="feature-card"><span class="feature-icon">🔒</span>
-                <h3>免费私人VPN</h3>
-                <p>无论你在哪，你的IP<strong>始终是家庭IP</strong>。</p>
+            <div class="feature-card">
+                <span class="feature-icon">🔒</span>
+                <h3>免费VPN隧道服务</h3>
+                <p>把从外部网络 (4G, 酒店WiFi) 的远程流量安全导流回本地网络。让您身在世界任何地方都能通过局网IP安全办公。</p>
             </div>
-            <div class="feature-card"><span class="feature-icon">👻</span>
-                <h3>对追踪器隐形</h3>
-                <p>DNS级别拦截意味着追踪器根本不会加载。</p>
+            <div class="feature-card">
+                <span class="feature-icon">🛡️</span>
+                <h3>VPN流量同享拦截功能</h3>
+                <p>即使使用VPN远程工作，远程数据传输流量依然享有由局网内AdBlocker实现的拦截保护。无论身在何处都保持安全。</p>
             </div>
-            <div class="feature-card"><span class="feature-icon">⚡</span>
-                <h3>10分钟安装</h3>
-                <p>刷写 → 插入 → 完成。无需终端。无需配置文件。</p>
+            <div class="feature-card">
+                <span class="feature-icon">📉</span>
+                <h3>极速低廉的入门成本</h3>
+                <p>此方案只需购买一台树莓派4B 2GB（最低要求）。极易被小型企业、自由职业者以至家庭使用者购买采用。</p>
             </div>
         </section>
 
+        <!-- The Problem -->
         <section id="problem">
-            <h2>🤔 问题</h2>
-            <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">每次你打开手机，<strong>企业都在监视你</strong>。</p>
+            <h2>🤔 痛点剖析</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">每天，<strong>企业、远程工作者和自由职业者都面临着无情的监控和追踪</strong>。</p>
             <div class="materials-list">
                 <ul>
-                    <li>你的网络运营商记录你访问的每一个网站。</li>
-                    <li>应用程序通过6000多个广告网络追踪你。</li>
-                    <li>智能电视、婴儿监视器、甚至你的冰箱——都在向某人发送你的数据。</li>
-                    <li>在公共WiFi或4G上，你的流量是完全暴露的。</li>
+                    <li>互联网服务提供商 (ISP) 记录您访问的所有企业域。</li>
+                    <li>广告网络在成千上万个网站收集并追踪用户数据。</li>
+                    <li>没有集中式的 VPN 服务，远程办公由于暴露在公共 WiFi 下毫无隐私。</li>
+                    <li>传统的企业级网络安全与防火墙解决方案往往复杂、昂贵，并需要专业的 IT 团队。</li>
                 </ul>
             </div>
             <blockquote class="freedom-quote">
-                <p>"说你不在乎隐私是因为你没什么可隐瞒的，就等于说你不在乎言论自由是因为你没什么话可说。"</p>
-                <cite>— 爱德华·斯诺登</cite>
+                <p>"说你不在乎隐私是因为你没有什么可隐瞒的，这就像是说你不在乎言论自由是因为你没什么可说的。"</p>
+                <cite>— 爱德华·斯诺登 (Edward Snowden)</cite>
             </blockquote>
         </section>
 
+        <!-- Freedom Callout -->
         <section>
             <div class="freedom-callout">
-                <p>💥 <strong>买一台树莓派。刷入ISO。插上电源。</strong>就这样——你刚刚让全家摆脱了企业、追踪器和不良行为者的控制。不需要学位。不需要订阅。只有自由。</p>
+                <p>💥 <strong>购买树莓派 4B 2GB。烧固件，插上网线电力线。</strong> 完毕 —
+                    您刚刚保护了您的办公室/家庭免受整个网络跟踪器和间谍活动的侵扰。无需月租订阅SaaS费用，仅需改一个路由配置就能开启企业级保护。</p>
             </div>
         </section>
 
+        <!-- Why Invisix Comparison -->
         <section id="compare">
-            <h2>🔥 为什么选择Invisix？</h2>
+            <h2>🔥 为什么选择 Invisix？</h2>
             <div style="overflow-x: auto;">
                 <table class="comparison-table">
                     <thead>
                         <tr>
                             <th></th>
-                            <th>商业VPN</th>
-                            <th>仅Pi-hole</th>
+                            <th>企业硬件防火墙</th>
+                            <th>SaaS 软件 VPN</th>
                             <th><strong>Invisix</strong></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>月费</td>
-                            <td>¥50-100/月</td>
-                            <td>免费</td>
-                            <td><strong>免费</strong></td>
+                            <td>每月订阅费用</td>
+                            <td>$$$/月 昂贵</td>
+                            <td>每个用户 $15/月</td>
+                            <td><strong>全免费</strong></td>
                         </tr>
                         <tr>
-                            <td>广告拦截</td>
+                            <td>广告与跟踪器防御</td>
+                            <td>✅需专业IT人员</td>
                             <td>❌</td>
-                            <td>✅ 仅在家</td>
-                            <td>✅ <strong>全场景</strong></td>
+                            <td>✅ <strong>内建开箱即用</strong></td>
                         </tr>
                         <tr>
-                            <td>包含VPN</td>
+                            <td>安全的远程 VPN</td>
+                            <td>✅设定极复杂</td>
+                            <td>✅</td>
+                            <td>✅ <strong>极易且免费</strong></td>
+                        </tr>
+                        <tr>
+                            <td>VPN流量享广告拦截</td>
                             <td>✅</td>
                             <td>❌</td>
-                            <td>✅ <strong>永久免费</strong></td>
+                            <td>✅ <strong>完美支持</strong></td>
                         </tr>
                         <tr>
-                            <td>所有设备上拦截</td>
-                            <td>❌</td>
-                            <td>✅</td>
-                            <td>✅</td>
+                            <td>适用的用户群体</td>
+                            <td>大型集团军</td>
+                            <td>所有人</td>
+                            <td><strong>中小型公司, 自由客, 个体</strong></td>
                         </tr>
                         <tr>
-                            <td>数据归你所有</td>
-                            <td>🤷 看情况</td>
-                            <td>✅</td>
-                            <td>✅</td>
+                            <td>部署完毕所需时间</td>
+                            <td>漫长的按天数算</td>
+                            <td>5 分钟</td>
+                            <td><strong>仅用 10 分钟</strong></td>
                         </tr>
                         <tr>
-                            <td>安装时间</td>
-                            <td>5分钟</td>
-                            <td>1-2小时</td>
-                            <td><strong>10分钟</strong></td>
-                        </tr>
-                        <tr>
-                            <td>需要终端</td>
-                            <td>不适用</td>
-                            <td>是</td>
-                            <td><strong>否</strong></td>
+                            <td>要求拥有高学历技术</td>
+                            <td>必须有</td>
+                            <td>简单</td>
+                            <td><strong>无需 (只会换配置词)</strong></td>
                         </tr>
                     </tbody>
                 </table>
@@ -187,126 +222,153 @@
         </section>
 
         <section id="materials">
-            <h2>📦 你需要什么</h2>
+            <h2>📦 您需要准备什么</h2>
             <div class="materials-list">
                 <ul>
-                    <li><strong>树莓派 4</strong> (或更新型号) — ¥250-400</li>
-                    <li><strong>MicroSD卡</strong> (8GB以上) — ¥30</li>
-                    <li><strong>网线</strong> — ¥15</li>
-                    <li><strong>USB-C电源</strong> — ¥50</li>
+                    <li><strong>树莓派 (Raspberry Pi 4B 2GB)</strong> (最低标准要求) — 约 $35-55</li>
+                    <li><strong>MicroSD 卡</strong> (最低选用8GB容量) — 约 $5</li>
+                    <li><strong>网线一条</strong> — 约 $3</li>
+                    <li><strong>USB-C 规格供电器材</strong> — 约 $10</li>
                 </ul>
             </div>
-            <p style="margin-top: 1.5rem; text-align: center; font-size: 1.1rem;"><strong>总计：约¥350-500
-                    一次性费用。</strong>没有月费。永远没有。</p>
+            <p style="margin-top: 1.5rem; text-align: center; font-size: 1.1rem;"><strong>总费用: 约为 $50-70
+                    一次性买断投资。</strong> 不再向SaaS商业套件持续上交高额月度“保护费”。</p>
         </section>
 
         <section id="install">
-            <h2>🚀 快速开始（10分钟）</h2>
+            <h2>🚀 快速开始配置指南 (十分钟)</h2>
+
             <div class="step">
                 <div class="step-number">1</div>
-                <h3>刷写镜像 💾</h3>
+                <h3>刻录镜像到存储卡 💾</h3>
                 <ol style="margin-left: 1.5rem;">
-                    <li>从<a href="https://github.com/lluisagusti/Invisix/releases" target="_blank">发布页面</a>下载
-                        <strong>invisix-distro.img</strong>。</li>
-                    <li>下载 <a href="https://www.raspberrypi.com/software/" target="_blank">Raspberry Pi Imager</a>。</li>
-                    <li>选择：<ul>
-                            <li><strong>设备：</strong>Raspberry Pi 4</li>
-                            <li><strong>操作系统：</strong>"Use Custom" → <code>invisix-distro.img</code></li>
-                            <li><strong>存储：</strong>你的SD卡</li>
+                    <li>请在我们的官方 <a href="https://github.com/lluisagusti/Invisix/releases"
+                            target="_blank">Releases发布页面</a> 上下载最新发布的 **`invisix-distro.img`** 包文件。
+                    </li>
+                    <li>下好并配置使用 <a href="https://www.raspberrypi.com/software/" target="_blank">树莓派的烧录工具(Raspberry Pi
+                            Imager)</a>。</li>
+                    <li>开启这个烧录神器：
+                        <ul>
+                            <li><strong>选择设备模型:</strong> 找到对应的 Raspberry Pi 4</li>
+                            <li><strong>挑选OS类型:</strong> 滚动列表底端 → "Use Custom(自定义源)" -> 选中前面放好的
+                                <code>invisix-distro.img</code></li>
+                            <li><strong>存储载体器位置:</strong> 指定读卡器上刚插入的空白 SD 卡</li>
                         </ul>
                     </li>
-                    <li><strong>重要：</strong>Next → "NO"（已配置好！）→ <strong>Write</strong>。</li>
+                    <li><strong>最关键步骤:</strong> 不要点击"编辑参数设定"(如果你被提示选框拦截，勇敢按下**NO(也就是不启用改数)**)。
+                    </li>
+                    <li>放心痛快的点击右下角 <strong>Write (开始写入)</strong>。然后就歇一会儿等待它最终顺利走完流程。</li>
                 </ol>
             </div>
+
             <div class="step">
                 <div class="step-number">2</div>
-                <h3>激活VPN（可选） ✨</h3>
-                <p><em>如果只想在家拦截广告，跳过此步。</em></p>
+                <h3>激活获取无偿 VPN 连接资格 (可选项任务) ✨</h3>
+                <p><em>如果您不使用异地移动网络组建的加密联线服务请放心忽略此项，只为过滤本地端流氓广告不用做这个步骤。</em></p>
                 <ol style="margin-left: 1.5rem; margin-top: 1rem;">
-                    <li>在 <a href="https://tailscale.com" target="_blank">tailscale.com</a> 创建免费账户。</li>
-                    <li><strong>Settings → Keys → "Generate auth key"</strong>。</li>
-                    <li>复制密钥 (<code>tskey-...</code>)。</li>
-                    <li>打开SD卡 (<code>bootfs</code>)。</li>
-                    <li>创建 <strong><code>tailscale-auth.key</code></strong>，粘贴密钥，保存。</li>
-                    <li>弹出SD卡。</li>
+                    <li>在 <a href="https://tailscale.com" target="_blank">tailscale.com</a> 完成最基础的信息账户创立。</li>
+                    <li>在其后台仪表盘上点击左侧 <strong>Settings(配置) > Keys(密钥管理)</strong> 并找到此按钮操作点进去： <strong>"Generate auth key
+                            (新增密钥)"</strong>。</li>
+                    <li>把生成的密钥完全无误的复制出来。(外观通常像 <code>tskey-...</code>)。</li>
+                    <li>回桌面，将装有刚刻得热腾腾的树莓派系统 SD 盘读卡器插上电脑 (系统通常会自动挂载弹出叫作 <code>bootfs</code> 的磁盘卷分区)。</li>
+                    <li>在它的根目录下建立一个新的文本记事簿并赋予名字： <strong><code>tailscale-auth.key</code></strong>, 接着把那串拷贝到的私家密文放置其中。
+                    </li>
+                    <li>搞定一切并存好盘、点出图标拔退这块神圣载玻片。</li>
                 </ol>
             </div>
+
             <div class="step">
                 <div class="step-number">3</div>
-                <h3>即插即用 🔌</h3>
+                <h3>给硬件通电！🔌</h3>
                 <ol style="margin-left: 1.5rem;">
-                    <li>SD卡 → 树莓派。</li>
-                    <li>网线 → 路由器连接到树莓派。</li>
-                    <li>电源线 → 树莓派。</li>
-                    <li><strong>等待5分钟 ⏳</strong> — 自动完成所有配置。</li>
+                    <li>把刚才做好的 SD 芯片推到板卡的小金属槽中卡紧卡稳。</li>
+                    <li>抽出一根物理实心以太铜网线连接好主网关(或软路由交换机)。</li>
+                    <li>插座那一边给予可靠平稳的电流传输。</li>
+                    <li><strong>这时候不要去碰它，给系统自我释放和初始化布署大概 5分钟时间⏳</strong> — 程序自己能够将后续最枯燥庞大的工程自动化打理完毕。</li>
                 </ol>
             </div>
+
             <div class="step">
                 <div class="step-number">4</div>
-                <h3>配置路由器 ⚙️</h3>
+                <h3>与路由器对话交接授权 (就这一个环节必须要人来手控) ⚙️</h3>
                 <ol style="margin-left: 1.5rem; margin-top: 1rem;">
-                    <li>打开路由器管理页面 (<code>http://192.168.1.1</code>)。</li>
-                    <li>找到 <strong>DHCP</strong> / <strong>局域网</strong> 设置。</li>
-                    <li>找到 <code>raspberrypi</code> → 启用<strong>静态地址分配</strong>。</li>
-                    <li>复制其IP（例如：<code>192.168.1.50</code>）。</li>
-                    <li>将该IP设为<strong>首选DNS服务器</strong>。</li>
+                    <li>前往你平日拨号拨打宽带时那个光猫猫或是家里大号路由的总入口后台网页管理界面(通常它的默认门牌是 <code>http://192.168.1.1</code> 也有些叫
+                        <code>http://192.168.0.1</code> ).</li>
+                    <li>进去了在各个抽屉（分页栏卡）里面细心寻宝找名叫 <strong>DHCP或者本地内部局区域网参数</strong> 的地方。</li>
+                    <li>搜索到名单成员列表中出现了那位叫做 `raspberrypi` 名字的客户人员，勾选它旁边的设定成 <strong>"Static Lease （静态死锁分配 /
+                            固化常态化IP颁布绑定)"</strong> (如此一来断电再上也是这个专用座位码不会被别人占用来惹乱局子了)。</li>
+                    <li>把这串数值保留好复制住。(例：长得像这样 <code>192.168.1.50</code> 的内网号段)。</li>
+                    <li>最后去配置面板的首个主控字段寻找**Primary DNS(网络默认解析首当其冲请求第一选择者)**，粘贴换作并确定就是刚才那位同志的那个数字号牌。保存使其生效重启。</li>
                 </ol>
             </div>
         </section>
 
         <section id="usage">
-            <h2>✅ 完成！</h2>
+            <h2>✅ 全面接盘收工! 即刻开冲享受吧。</h2>
             <div class="features" style="margin-top: 2rem;">
                 <div class="feature-card" style="text-align: left;">
-                    <h3>🏠 在家</h3>
-                    <p>什么都不用做。广告消失了。页面加载更快了。生活美好了。</p>
+                    <h3>🏢 在公司、公寓与私人天地</h3>
+                    <p>不用干啥多余的操作。弹窗不再打扰这清净的空间。那些花时间载入的素材如脱缰野狗般狂飙加载闪电级打开体验感极强。私底下对你的任何偏好挖掘偷探和商业售卖被强有力的一刀剪裁阻止了。
+                        整个办公室/战队的安防得到飞升保障。</p>
                 </div>
                 <div class="feature-card" style="text-align: left;">
-                    <h3>📱 外出时 (4G / 公共WiFi)</h3>
+                    <h3>💼 奔波途中与客场作战 (使用蜂窝数据和机场餐厅的开放 Wi-Fi) </h3>
                     <ol style="margin-left: 1.5rem; margin-top: 0.5rem;">
-                        <li>安装 <strong>Tailscale</strong> 应用。</li>
-                        <li>登录。</li>
-                        <li>开启。</li>
-                        <li>无广告、加密、隐形。</li>
+                        <li>帮您的私人或工作手持智能机器装一个叫作 <strong>Tailscale</strong> 的袖珍客户端工具。</li>
+                        <li>通过正常扫码输入资料过审验权准予通行。</li>
+                        <li>打开界面的滑动连接把手给拨打到（ON状态）开启连入。</li>
+                        <li>全自动的拥有如同在大本营防火墙那般毫无污垢纯净没任何垃圾牛皮鲜的清爽访问空间，同时通信往来皆受军用级坚实保护加密层所覆盖防护！
+                            <strong>您的数据包流量依然通过局域网中那道广告筛检过滤器层层审核安全下派送到手内。</strong> </li>
                     </ol>
                 </div>
             </div>
+
             <div
                 style="background: var(--card-bg); padding: 1.5rem; border-radius: 12px; margin-top: 2rem; border: 1px solid var(--border-color); text-align: center;">
-                <h3>📊 控制面板</h3>
+                <h3>📊 掌握全盘中枢调度仪表控制端</h3>
+                <p>实时稽查捕风捉影监管所有流入和拦截了的外来侵入物详细账目明细请移驾：</p>
                 <div class="command-block" style="display: inline-block; padding: 0.5rem 1rem;">
-                    http://&lt;你的树莓派IP&gt;/admin</div>
-                <p>密码：<code>admin</code></p>
+                    http://&lt;填写之前让你保存抄写的那个固定树莓派地址&gt;/admin</div>
+                <p>后台管理员默认通行密码字： <code>admin</code></p>
+                <p style="margin-top: 1rem; font-size: 0.9rem; color: #8b949e;">一个正常健康的家庭和公司运作时基本大概有
+                    <strong>大约有全量的三成乃至一半的日常解析通信行为(即 30-50% 间的DNS 呼唤声) </strong>
+                    是属于充满流氓企图跟监监视性质被暗中投递发射来的。如今这些垃圾再也没有容身与得逞的机会空间每天都会被它拦阻绝杀击退至万千回以外的虚无境界里消散干净！ </p>
             </div>
         </section>
 
+        <!-- Spread the Word -->
         <section id="spread">
-            <h2>📣 帮我们传播</h2>
+            <h2>📣 共造美好大同,请帮助向外界呼声转述这伟大壮举！</h2>
             <div class="features" style="margin-top: 2rem;">
-                <div class="feature-card"><span class="feature-icon">⭐</span>
-                    <h3>给个Star</h3>
-                    <p>这是你能做的最重要的事。</p>
+                <div class="feature-card">
+                    <span class="feature-icon">⭐</span>
+                    <h3>提供力所能及的点亮赞星支持</h3>
+                    <p>您的随手一赞让整个开发作者社区都会倍感荣光振奋人心这是我们一直能够持续做高尚贡献活动源源动力的支柱依靠力量。</p>
                 </div>
-                <div class="feature-card"><span class="feature-icon">📢</span>
-                    <h3>分享它</h3>
-                    <p>告诉朋友，发帖，转发。</p>
+                <div class="feature-card">
+                    <span class="feature-icon">📢</span>
+                    <h3>传播与布道</h3>
+                    <p>告诉身边正在苦受隐私流氓之苦并迫切想找到方案破局的朋友或者是你们老板或公司的 IT 行政经理听听这等有建设性的良策高论吧。</p>
                 </div>
-                <div class="feature-card"><span class="feature-icon">🍴</span>
-                    <h3>Fork并贡献</h3>
-                    <p>代码、文档、翻译——都欢迎。</p>
+                <div class="feature-card">
+                    <span class="feature-icon">🍴</span>
+                    <h3>添砖加瓦协同发力 </h3>
+                    <p>源码共筑、教程编撰修订改进、以及扩展本地语言包版本等等，所有人的建设才华都有施展的空间我们张开热烈的怀抱等待各位智力入驻合作共创辉映新时代长河！</p>
                 </div>
             </div>
             <p style="text-align: center; font-size: 1.1rem; margin-top: 2rem; color: #8b949e;">
-                <em>互联网的设计初衷不是为了监视你。让我们一起夺回它。</em></p>
+                <em>构建创造这个美好宽带互联网世界初衷与目的绝对不是拿来出卖您的行为数据行蝇营狗苟谋取见不得光财富利益手段渠道的！让我们拿起工具夺回原本赋予我们在冲浪时代最基本的体面与尊严！</em></p>
         </section>
 
         <footer>
-            <p>用 <span class="heart">❤️</span> 在巴塞罗那制作</p>
-            <p style="font-size: 1rem; margin-top: 1rem; font-weight: 600;">隐私不是奢侈品。它是一项权利。</p>
+            <p>在 巴塞罗那 的热情中制作 <span class="heart">❤️</span></p>
+            <p style="font-size: 1rem; margin-top: 1rem; font-weight: 600;">保护隐私从来不是一种什么昂贵享受特权的奢华奢侈品。这是一项不可侵犯与让度妥协的神仙权利。
+            </p>
             <p style="font-size: 0.8rem; margin-top: 1rem; opacity: 0.6;">Image by Icon9: 2AP7ER4MZS, 3J78MSUBDL &
                 NCP3JFBQTZ.</p>
         </footer>
     </div>
+
 </body>
 
 </html>

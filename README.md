@@ -5,9 +5,10 @@
 <h1 align="center">INVISIX</h1>
 
 <p align="center">
-  <strong>Your home is your castle. Now it's your VPN too.</strong><br>
-  <sub>🚫 One tiny box. Zero ads on every device. Phones, tablets, smart TVs — even that sketchy IoT toaster.</sub><br>
-  <sub>🏆 Probably the simplest and most useful Linux distro for non-technical users. Plug it in and forget it.</sub>
+  <strong>Corporate-grade privacy solution, out of the box.</strong><br>
+  <sub>🚫 One tiny box. Infinite freedom. Network-wide AdBlocker and TrackerBlocker.</sub><br>
+  <sub>💼 Secure free VPN through your office or home network — remote traffic enjoys the same AdBlock protection.</sub><br>
+  <sub>🏆 Designed for corporations, freelancers, and small companies. Simple enough for home users due to its reduced price.</sub>
 </p>
 
 <p align="center">
@@ -20,7 +21,7 @@
   <img src="https://img.shields.io/github/stars/lluisagusti/Invisix?style=social" alt="GitHub Stars">
   <img src="https://img.shields.io/github/license/lluisagusti/Invisix" alt="License">
   <img src="https://img.shields.io/badge/setup-10%20minutes-brightgreen" alt="Setup Time">
-  <img src="https://img.shields.io/badge/cost-%240-blue" alt="Cost: Free">
+  <img src="https://img.shields.io/badge/reqs-Raspberry%20Pi%204B%202GB-blue" alt="Hardware">
 </p>
 
 <p align="center">
@@ -31,14 +32,14 @@
 
 ## 🤔 The Problem
 
-Every time you open your phone, **corporations are watching**.
+Every day, **corporations, remote workers, and freelancers face relentless surveillance and tracking**.
 
-- Your ISP logs every website you visit.
-- Apps track you across 6,000+ ad networks.
-- Smart TVs, baby monitors, even your fridge — all phoning home.
-- On public WiFi or 4G, your traffic is **wide open**.
+- ISPs log every corporate domain you visit.
+- Ad networks track user behavior across thousands of sites.
+- Without a centralized VPN, remote workers are exposed on public WiFi and 4G.
+- Enterprise-grade firewall, AdBlock, and VPN solutions are typically complex, expensive, and require dedicated IT teams to maintain.
 
-You didn't sign up for surveillance. But you got it anyway.
+You need a professional, reliable, and secure environment. 
 
 > *"Arguing that you don't care about privacy because you have nothing to hide is like arguing that you don't care about free speech because you have nothing to say."*  
 > — **Edward Snowden**
@@ -47,47 +48,45 @@ You didn't sign up for surveillance. But you got it anyway.
 
 ## 💡 The Solution
 
-**Invisix** is a plug-and-play Raspberry Pi distro that gives you:
+**Invisix** is a plug-and-play Linux distro for your Raspberry Pi that provides a **corporate-grade privacy solution, out of the box.**
 
-| Feature | What it does | How it feels |
+| Feature | What it does | Impact |
 |---|---|---|
-| 🚫 **Network-Wide Ad Blocker** | Blocks ads & trackers on **every device** in your home — phones, tablets, smart TVs, everything | Like the internet was meant to be |
-| 🔒 **Free Private VPN** | Wherever you go (4G, airport WiFi, hotels), your IP is **always your home IP** | Like you never left the couch |
-| 👻 **Invisible to trackers** | DNS-level blocking means trackers never even load | Like you don't exist to advertisers |
-| ⚡ **10 minute setup** | Flash → Plug → Done. No terminal. No config files. | Like it should be |
+| 🚫 **AdBlocker & TrackerBlocker** | Blocks ads & trackers on **every device** connected to your network. | Bandwidth optimization and protection from malicious tracking. |
+| 🔒 **Free VPN through Office/Home** | Securely tunnel remote traffic (4G, hotel WiFi) back through your local network. | Work securely from anywhere with a local IP. |
+| 🛡️ **VPN enjoys the AdBlock** | Even when working remotely via the VPN, your traffic is filtered by the AdBlocker. | Consistent protection regardless of physical location. |
+| 📉 **Reduced Price** | Only requires a Raspberry Pi 4B 2GB (minimum requirement). | Accessible for small companies, freelancers, and even home users. |
 
-**No subscriptions. No cloud. No data collection. No BS.**
+**No subscriptions. No cloud data harvesting. Just a single, low-technical configuration change to secure your business.**
 
-Your Raspberry Pi. Your rules.
-
-> **💥 Buy a Raspberry Pi. Flash the ISO. Plug it in. That's it — you just freed your entire household from corporations, trackers, and bad actors. No degree required. No subscription. Just freedom.**
+> **💥 Buy a Raspberry Pi 4B 2GB. Flash the ISO. Plug it in. Protect your office or home network instantly.**
 
 ---
 
 ## 🏗️ How It Works
 
-```
-                        YOUR HOME
+```text
+                        YOUR OFFICE / HOME
   ┌──────────────────────────────────────────────────────┐
   │                                                      │
-  │   Phone ────┐                                        │
-  │   Laptop ───┤                                        │
-  │   Smart TV ─┼───▶  Raspberry Pi (Invisix)  ───▶ Internet
-  │   Console ──┤        |-- Pi-hole (ad blocking)       │
-  │   Tablet ───┘        '-- Tailscale (VPN)             │
+  │   Workstation ──┐                                    │
+  │   Laptop ───────┤                                    │
+  │   Smart Screen ─┼───▶  Raspberry Pi (Invisix)  ───▶ Internet
+  │   Mobile ───────┤        |-- DNS Ad & TrackerBlock   │
+  │   IoT Device ───┘        '-- Tailscale (VPN)         │
   │                                                      │
-  │   All DNS queries filtered. Ads obliterated.         │
+  │   All DNS queries filtered. Trackers obliterated.    │
   └──────────────────────────────────────────────────────┘
 
-                     AWAY FROM HOME
+                      REMOTE WORKERS
   ┌──────────────────────────────────────────────────────┐
   │                                                      │
-  │   You (4G / Airport WiFi / Hotel)                    │
+  │   Remote Laptop (4G / Hotel / Airport)               │
   │     |                                                │
-  │     '───▶  Tailscale VPN Tunnel  ───▶  Home          │
+  │     '───▶  Tailscale VPN Tunnel  ───▶  Local Network │
   │                                                      │
-  │   Your IP = Home IP. Ads = Still blocked.            │
-  │   ISP/Hotel/Airport sees: encrypted noise.           │
+  │   Traffic seamlessly protected by the AdBlock.       │
+  │   External networks see only encrypted noise.        │
   └──────────────────────────────────────────────────────┘
 ```
 
@@ -97,14 +96,12 @@ Your Raspberry Pi. Your rules.
 
 | Item | Cost | Note |
 |---|---|---|
-| 🍓 Raspberry Pi 4 (or newer) | ~$35-55 | The brain |
-| 💾 MicroSD Card (8GB+) | ~$5 | The soul |
-| 🔌 Ethernet Cable | ~$3 | The spine |
-| ⚡ USB-C Power Supply | ~$10 | The heart |
+| 🍓 Raspberry Pi 4B 2GB (Min Req) | ~$35-55 | The Brain |
+| 💾 MicroSD Card (8GB+) | ~$5 | The Storage |
+| 🔌 Ethernet Cable | ~$3 | The Connection |
+| ⚡ USB-C Power Supply | ~$10 | The Power |
 
-**Total: ~$50-70 one-time.** No monthly fees. Ever.
-
-> Compare that to $10-15/month for a commercial VPN that [still tracks you](https://www.consumerreports.org/electronics/vpn-services/vpn-testing-poor-privacy-security-a5765950498/) and sells your data. Invisix pays for itself in **4 months**.
+**Total: ~$50-70 one-time.** Zero recurring SaaS fees for enterprise protection.
 
 ---
 
@@ -120,9 +117,9 @@ Your Raspberry Pi. Your rules.
    - **Storage**: Your SD card
 4. Click **Next** → **"NO"** to editing settings (already configured!) → **Write**.
 
-### Step 2: Activate VPN (Optional) ✨
+### Step 2: Activate Free VPN (Optional) ✨
 
-> *Skip this if you only want ad blocking at home.*
+> *Skip this if you only want local network protection.*
 
 1. Create a free account at [**tailscale.com**](https://tailscale.com) (Google/Microsoft login works).
 2. Go to **Settings → Keys → "Generate auth key"**.
@@ -134,56 +131,57 @@ Your Raspberry Pi. Your rules.
 ### Step 3: Plug & Play 🔌
 
 1. SD card → Raspberry Pi.
-2. Ethernet cable → Router to Pi.  
+2. Ethernet cable → Router/Switch to Pi.  
 3. Power cable → Pi.
 4. **Wait 5 minutes** ⏳ — it auto-configures everything.
 
-### Step 4: Tell Your Router (The Only Manual Step) ⚙️
+### Step 4: The One Low-Technical Configuration Change ⚙️
 
-1. Open your router's page (`http://192.168.1.1` or `http://192.168.0.1`).
-2. Find **DHCP** / **Local Network** settings.
-3. Find `raspberrypi` in the device list → enable **Static Lease**.
+To route all domain requests through Invisix, you just need to tell your router where to look:
+
+1. Open your router's administration page (`http://192.168.1.1` or `http://192.168.0.1`).
+2. Find the **DHCP** or **Local Network** settings.
+3. Find `raspberrypi` in the connected devices list → enable **Static Lease** (so its IP never changes).
 4. Copy its IP (e.g., `192.168.1.50`).
-5. Set that IP as your **Primary DNS**.
+5. Set that IP as your network's **Primary DNS** server.
 
 ### ✅ Done!
 
-**That's it.** Every device on your network is now ad-free and tracker-free.
+**That's it.** Your corporate or home network is now fundamentally secure from ads and tracking telemetry.
 
 ---
 
 ## 🌍 Using It
 
-### 🏠 At Home
-Do nothing. Ads disappear. Pages load faster. Life improves.
+### 🏢 At the Office / Home
+Do nothing. Ads disappear. Workflows load faster. Telemetry stops. The whole team is protected.
 
-### 📱 Away from Home (4G / Public WiFi)
-1. Install the **Tailscale** app on your phone.
+### 💼 Remote Work (4G / Public WiFi)
+1. Install the **Tailscale** client on your work device.
 2. Log in.
-3. Toggle ON.
-4. You're now browsing through your home connection — **ad-free, encrypted, invisible**.
+3. Toggle the VPN ON.
+4. You're now securely tunneled through your office connection — **and your VPN traffic enjoys the same AdBlocker protection.**
 
 ### 📊 Control Panel
-See how many ads you've crushed:
+Audit your network traffic and see what's being blocked:
 - Visit `http://<YOUR-PI-IP>/admin`
 - Password: `admin`
 
-> Most users block **30-50% of all DNS queries**. That's thousands of trackers per day that never reach your devices.
+> Most networks block **30-50% of all DNS queries**. That's thousands of tracking attempts per day neutralized.
 
 ---
 
 ## 🔥 Why Invisix?
 
-| | Commercial VPN | Pi-hole alone | **Invisix** |
+| | Enterprise Firewall | SaaS VPN | **Invisix** |
 |---|---|---|---|
-| Monthly cost | $5-15/mo | Free | **Free** |
-| Ad blocking | ❌ | ✅ Home only | ✅ **Everywhere** |
-| VPN included | ✅ | ❌ | ✅ **Free forever** |
-| Blocks on all devices | ❌ | ✅ | ✅ |
-| No app required (home) | ❌ | ✅ | ✅ |
-| Your data stays yours | 🤷 Depends | ✅ | ✅ |
-| Setup time | 5 min | 1-2 hours | **10 min** |
-| Requires terminal | N/A | Yes | **No** |
+| Monthly cost | $$$/mo | $15/mo per user | **Free** |
+| Ad & Tracker Blocking | ✅ Requires IT | ❌ | ✅ **Out of the box** |
+| Secure Remote VPN | ✅ Complex Setup | ✅ | ✅ **Simple & Free** |
+| VPN Enjoys AdBlock | ✅ | ❌ | ✅ **Yes** |
+| Target Audience | Large Corp | Anyone | **SME, Freelance, Home** |
+| Setup time | Days | 5 min | **10 min** |
+| Requires technical degree | Yes | No | **No (one config change)** |
 
 ---
 
@@ -203,10 +201,10 @@ See [`BUILD.md`](BUILD.md) for instructions on building the distro image from so
 
 ## 📣 Help Us Spread the Word
 
-If Invisix helped you, **help it help others**:
+If Invisix secured your workflow, **help it help others**:
 
 - ⭐ **Star this repo** — it's the single biggest thing you can do.
-- 📢 **Share it** — tell a friend, post it, tweet it.
+- 📢 **Share it** — tell fellow freelancers or IT admins.
 - 🐛 **Report bugs** — every issue makes Invisix better for everyone.
 - 🍴 **Fork & contribute** — code, docs, translations, all welcome.
 
@@ -216,7 +214,7 @@ If Invisix helped you, **help it help others**:
 
 ## 📜 License
 
-[MIT License](LICENSE) — do whatever you want with it. Seriously.
+[MIT License](LICENSE) — Sharing is caring.
 
 ---
 
