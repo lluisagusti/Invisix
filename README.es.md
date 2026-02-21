@@ -11,7 +11,7 @@
   <a href="https://sourceforge.net/projects/invisix/files/release1/invisix-distro.img/download">💾 Descargar</a> · 
   <a href="https://www.invisix.io/index_es.html">🌐 Sitio Web</a> · 
   <a href="#-inicio-rápido-10-minutos">🚀 Inicio Rápido</a> · 
-  <a href="https://github.com/lluisagusti/Invisix/stargazers">⭐ Danos una estrella</a>
+  <a href="https://github.com/lluisagusti/invisix">⭐ Danos una estrella</a>
 </p>
 
 <p align="center">
