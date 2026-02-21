@@ -8,6 +8,7 @@
 </p>
 
 <p align="center">
+  <a href="https://sourceforge.net/projects/invisix/files/release1/invisix.img/download">💾 Herunterladen</a> · 
   <a href="https://www.invisix.io/index_de.html">🌐 Website</a> · 
   <a href="#-schnellstart-10-minuten">🚀 Schnellstart</a> · 
   <a href="https://github.com/lluisagusti/Invisix/stargazers">⭐ Sterne uns (Star Us)</a>
@@ -105,11 +106,11 @@ Sie benötigen eine professionelle, zuverlässige und sichere Umgebung.
 
 ### Schritt 1: Image flashen 💾
 
-1. Laden Sie die **`invisix-distro.img`** von der [Releases-Seite](https://github.com/lluisagusti/Invisix/releases) herunter.
+1. Laden Sie die **`invisix.img`** von [SourceForge](https://sourceforge.net/projects/invisix/files/release1/invisix.img/download) herunter.
 2. Laden Sie [**Raspberry Pi Imager**](https://www.raspberrypi.com/software/) herunter.
 3. Öffnen Sie es und wählen Sie:
    - **Gerät (Device)**: Raspberry Pi 4
-   - **OS**: Nach unten scrollen → "Use Custom" → `invisix-distro.img` auswählen
+   - **OS**: Nach unten scrollen → "Use Custom" → `invisix.img` auswählen
    - **Speicher (Storage)**: Ihre SD-Karte
 4. Klicken Sie auf **Weiter** → **"NEIN"** zu den Einstellungen (bereits konfiguriert!) → **Schreiben**.
 
@@ -178,6 +179,18 @@ Tun Sie gar nichts. Werbung verschwindet. Seiten laden schneller. Verfolgung sto
 | Zielgruppe | Großkonzerne | Jeder | **KMU, Freelance, Heimnutzer** |
 | Einrichtungszeit | Tage | 5 Min | **10 Min** |
 | Erfordert IT-Kenntnisse | Ja | Nein | **Nein (nur 1 Änderung)** |
+
+---
+
+## 💾 Herunterladen
+
+Bereit loszulegen? Laden Sie die neueste Version von SourceForge herunter:
+
+<p align="center">
+  <a href="https://sourceforge.net/projects/invisix/files/release1/invisix.img/download">
+    <img src="https://img.shields.io/badge/Herunterladen-invisix.img-blue?style=for-the-badge&logo=sourceforge" alt="Invisix Herunterladen">
+  </a>
+</p>
 
 ---
 

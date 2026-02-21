@@ -8,6 +8,7 @@
 </p>
 
 <p align="center">
+  <a href="https://sourceforge.net/projects/invisix/files/release1/invisix.img/download">💾 下载</a> · 
   <a href="https://www.invisix.io/index_zh.html">🌐 网站</a> · 
   <a href="#-快速开始10分钟">🚀 快速开始</a> · 
   <a href="https://github.com/lluisagusti/Invisix/stargazers">⭐ 给我们标星</a>
@@ -105,11 +106,11 @@
 
 ### 步骤 1: 烧录镜像 💾
 
-1. 请先在 [应用发布 (Releases)](https://github.com/lluisagusti/Invisix/releases) 里下载最新的发行版本 **`invisix-distro.img`**.
+1. 请先在 [SourceForge](https://sourceforge.net/projects/invisix/files/release1/invisix.img/download) 里下载最新的发行版本 **`invisix.img`**.
 2. 下载并安装官方烧录工具: [**Raspberry Pi Imager**](https://www.raspberrypi.com/software/).
 3. 开启它并按此选择设定:
    - **Device 设备**: 树莓派 4 (Raspberry Pi 4)
-   - **OS 固件**: 拉到最低 → "Use Custom" (选择您下载好的自定义镜像文件) → 选择并载入 `invisix-distro.img`。
+   - **OS 固件**: 拉到最低 → "Use Custom" (选择您下载好的自定义镜像文件) → 选择并载入 `invisix.img`。
    - **Storage 容量载体**: 点击配置并选取对应的 储存(SD) 卡接口。
 4. 点击 **下一步 (Next)** → 然后由于固件已经修改，弹出提示框请果断点击 **"否 (NO)"** 拒绝编辑参数 → 点击**烧录 (Write)**，等待进度条完成拔出拔出电源。
 
@@ -178,6 +179,18 @@
 | 提供适配的应用场景服务和产品客群 | 大批量跨企业管理群 | 所有 | **中小初创企业,远程SOHO个人、全家人群用** |
 | 花费配置准备就绪所使用的全部钟时间 | 很多个白昼时间排队操作测试 | 5 分钟 | **10 分钟极速完结** |
 | 实施人员具备大学网络科技系统化教育门槛吗 | 非常需要高薪聘任专业工程师 | 可以不用 | **不必须要 (简易路由点击)** |
+
+---
+
+## 💾 下载
+
+准备好开始了吗？从 SourceForge 下载最新版本：
+
+<p align="center">
+  <a href="https://sourceforge.net/projects/invisix/files/release1/invisix.img/download">
+    <img src="https://img.shields.io/badge/下载-invisix.img-blue?style=for-the-badge&logo=sourceforge" alt="下载 Invisix">
+  </a>
+</p>
 
 ---
 
