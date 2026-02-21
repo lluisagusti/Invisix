@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://sourceforge.net/projects/invisix/files/release1/invisix.img/download">💾 下载</a> · 
+  <a href="https://sourceforge.net/projects/invisix/files/release1/invisix-distro.img/download">💾 下载</a> · 
   <a href="https://www.invisix.io/index_zh.html">🌐 网站</a> · 
   <a href="#-快速开始10分钟">🚀 快速开始</a> · 
   <a href="https://github.com/lluisagusti/Invisix/stargazers">⭐ 给我们标星</a>
@@ -106,7 +106,7 @@
 
 ### 步骤 1: 烧录镜像 💾
 
-1. 请先在 [SourceForge](https://sourceforge.net/projects/invisix/files/release1/invisix.img/download) 里下载最新的发行版本 **`invisix.img`**.
+1. 请先在 [SourceForge](https://sourceforge.net/projects/invisix/files/release1/invisix-distro.img/download) 里下载最新的发行版本 **`invisix.img`**.
 2. 下载并安装官方烧录工具: [**Raspberry Pi Imager**](https://www.raspberrypi.com/software/).
 3. 开启它并按此选择设定:
    - **Device 设备**: 树莓派 4 (Raspberry Pi 4)
@@ -187,7 +187,7 @@
 准备好开始了吗？从 SourceForge 下载最新版本：
 
 <p align="center">
-  <a href="https://sourceforge.net/projects/invisix/files/release1/invisix.img/download">
+  <a href="https://sourceforge.net/projects/invisix/files/release1/invisix-distro.img/download">
     <img src="https://img.shields.io/badge/下载-invisix.img-blue?style=for-the-badge&logo=sourceforge" alt="下载 Invisix">
   </a>
 </p>

@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://sourceforge.net/projects/invisix/files/release1/invisix.img/download">💾 Descargar</a> · 
+  <a href="https://sourceforge.net/projects/invisix/files/release1/invisix-distro.img/download">💾 Descargar</a> · 
   <a href="https://www.invisix.io/index_es.html">🌐 Sitio Web</a> · 
   <a href="#-inicio-rápido-10-minutos">🚀 Inicio Rápido</a> · 
   <a href="https://github.com/lluisagusti/Invisix/stargazers">⭐ Danos una estrella</a>
@@ -106,7 +106,7 @@ Necesitas un entorno profesional, fiable y seguro.
 
 ### Paso 1: Flashear la Imagen 💾
 
-1. Descarga **`invisix.img`** desde [SourceForge](https://sourceforge.net/projects/invisix/files/release1/invisix.img/download).
+1. Descarga **`invisix.img`** desde [SourceForge](https://sourceforge.net/projects/invisix/files/release1/invisix-distro.img/download).
 2. Descarga [**Raspberry Pi Imager**](https://www.raspberrypi.com/software/).
 3. Ábrelo y selecciona:
    - **Dispositivo**: Raspberry Pi 4
@@ -187,7 +187,7 @@ Audita el tráfico de tu red y mira qué cosas se están bloqueando:
 ¿Listo para empezar? Descarga la última versión desde SourceForge:
 
 <p align="center">
-  <a href="https://sourceforge.net/projects/invisix/files/release1/invisix.img/download">
+  <a href="https://sourceforge.net/projects/invisix/files/release1/invisix-distro.img/download">
     <img src="https://img.shields.io/badge/Descargar-invisix.img-blue?style=for-the-badge&logo=sourceforge" alt="Descargar Invisix">
   </a>
 </p>
